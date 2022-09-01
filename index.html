@@ -1,0 +1,338 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Xiaoxuan Ma</title>
+  
+  <meta name="author" content="Xiaoxuan Ma">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫧</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Xiaoxuan Ma (马霄璇)</name>
+              </p>
+              <p>I'm a second-year Ph.D. student in Computer Science at <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University. I'm a member of the <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">Computer Vision and Digital Art group</a>, advised by <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Prof. Yizhou Wang</a>. I received my Bachelor's and Master's degrees in Computer Science from Peking University in 2018 and 2021, respectively.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:maxiaoxuan@pku.edu.cn">Email</a> &nbsp/&nbsp
+                <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
+                <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                <a href="https://scholar.google.com/citations?user=mjP_5SEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/%E9%9C%84%E7%92%87-%E9%A9%AC-740b7b122/">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/ShirleyMaxx">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/me/mxx.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/me/mxx.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Research -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                I'm interested in computer vision and machine learning, especially 3D human pose estimation and reconstruction. 
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="virtualpose_stop()" onmouseover="virtualpose_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='virtualpose_image'>
+                  <img src='images/virturalpose.png' width="160"></div>
+                <img src='images/virturalpose.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function virtualpose_start() {
+                  document.getElementById('virtualpose_image').style.opacity = "1";
+                }
+
+                function virtualpose_stop() {
+                  document.getElementById('virtualpose_image').style.opacity = "0";
+                }
+                virtualpose_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2207.09949">
+                <papertitle>Virtual Pose: Learning Generalizable 3D Human Pose Models from Virtual Data</papertitle>
+              </a>
+              <br>
+              Jiajun Su,
+              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=zh-CN">Wenjun Zeng</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <br>
+              <em>ECCV</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2207.09949">arXiv</a>
+              /
+              <a href="https://github.com/wkom/VirtualPose">code</a>
+              <p></p>
+              <p>
+              We address the generalization issues in monocular 3D absolute pose estimation by introducing an intermediate representation termed Abstract Geometry Representation (AGR).
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="contextpose_stop()" onmouseover="contextpose_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='contextpose_image'>
+                  <img src='images/contextpose.gif' width="160"></div>
+                <img src='images/contextpose.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function contextpose_start() {
+                  document.getElementById('contextpose_image').style.opacity = "1";
+                }
+
+                function contextpose_stop() {
+                  document.getElementById('contextpose_image').style.opacity = "0";
+                }
+                contextpose_stop()
+              </script>
+            </td>
+
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf">
+                <papertitle>Context Modeling in 3D Human Pose Estimation: A Unified Perspective</papertitle>
+              </a>
+              <br>
+              <strong>Xiaoxuan Ma*</strong>,
+              Jiajun Su*,
+              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <a href="/">Hai Ci</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <br>
+              <em>CVPR</em>, 2021
+              <br>
+              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf">paper</a>
+              /
+              <a href="https://github.com/ShirleyMaxx/ContextPose-PyTorch-release">code</a>
+              <p></p>
+              <p>
+              We propose a general formula of context modeling in monocular 3D human pose estimation task.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="lcn_pami_stop()" onmouseover="lcn_pami_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lcn_pami_image'>
+                  <img src='images/lcn_pami.png' width="160"></div>
+                <img src='images/lcn_pami.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function lcn_pami_start() {
+                  document.getElementById('lcn_pami_image').style.opacity = "1";
+                }
+
+                function lcn_pami_stop() {
+                  document.getElementById('lcn_pami_image').style.opacity = "0";
+                }
+                lcn_pami_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/9174911">
+                <papertitle>Locally Connected Network for Monocular 3D Human Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a href="/">Hai Ci*</a>,
+              <strong>Xiaoxuan Ma*</strong>,
+              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <br>
+              <em>T-PAMI</em>, 2020
+              <br>
+              <a href="https://ieeexplore.ieee.org/document/9174911">paper</a>
+              /
+              <a href="https://github.com/CHUNYUWANG/lcn-pose">code</a>
+              <p></p>
+              <p>
+              We present an end-to-end approach by using Locally Connected Network (LCN) to estimate 3D human pose from a monocular image.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="lcn_stop()" onmouseover="lcn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lcn_image'>
+                  <img src='images/lcn.gif' width="160"></div>
+                <img src='images/lcn.gif' width="160">
+              </div>
+              <script type="text/javascript">
+                function lcn_start() {
+                  document.getElementById('lcn_image').style.opacity = "1";
+                }
+
+                function lcn_stop() {
+                  document.getElementById('lcn_image').style.opacity = "0";
+                }
+                lcn_stop()
+              </script>
+            </td>
+
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html">
+                <papertitle>Optimizing Network Structure for 3D Human Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a href="/">Hai Ci</a>,
+              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <br>
+              <em>ICCV</em>, 2019
+              <br>
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html">paper</a>
+              /
+              <a href="https://github.com/CHUNYUWANG/lcn-pose">code</a>
+              <p></p>
+              <p>
+              We present Locally Connected Network (LCN) to overcome the limitations of GCN in 3D human pose estimation.
+              </p>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <!-- Education -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Education</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <tr>
+            <td style="padding:10px;width:25%;vertical-align:middle">
+              <img src="images/me/cfcs.png" alt="eth" width="80" height="80">
+            </td>
+            <td width="75%" valign="center">
+              Ph.D. candidate
+              <br>
+              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">CVDA Lab, <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University, Beijing
+              <br>
+              Sep. 2021 ~ Now
+              <br>
+              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;width:25%;vertical-align:middle">
+              <img src="images/me/cfcs.png" alt="eth" width="80" height="80">
+            </td>
+            <td width="75%" valign="center">
+              Master's degree
+              <br>
+              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">CVDA Lab, <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University, Beijing
+              <br>
+              Sep. 2018 ~ Jun. 2021
+              <br>
+              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:10px;width:25%;vertical-align:middle">
+              <img src="images/me/pku.png" alt="eth" width="80" height="80">
+            </td>
+            <td width="75%" valign="center">
+              Bachelor's degree
+              <br>
+              <a href="https://eecs.pku.edu.cn/">Depart. of Computer Science</a>, Peking University, Beijing, China
+              <br>
+              Sep. 2014 ~ Jun. 2018
+              <br>
+            </td>
+          </tr>
+
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <tr>
+            <td>
+              <heading>Misc</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+            <td width="75%" valign="center">
+              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+              <br>
+              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
+              <br>
+              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+              <br>
+              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cs188.jpg" alt="cs188">
+            </td>
+            <td width="75%" valign="center">
+              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+              <br>
+              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+              <br>
+              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+            </td>
+          </tr>
+					
+
+          <tr>
+            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+							<heading>Basically <br> Blog Posts</heading>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+              <br>
+              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+              <br>
+              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+            </td>
+          </tr>
+					
+					
+        </tbody></table> -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Website template from <a href="https://jonbarron.info/">Jon Barron</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

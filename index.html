@@ -1,32 +1,23 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Xiaoxuan Ma</title>
-  
-  <meta name="author" content="Xiaoxuan Ma">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en"><head><meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🫧</text></svg>">
-</head>
+  <link rel="icon" type="image/png" href="seal_icon.png">
+  <script type="text/javascript" src="js/hidebib.js"></script>
+  <title>Xiaoxuan Ma</title>
+  <meta name="Xiaoxuan Ma's Homepage"http-equiv="Content-Type" content="Xiaoxuan Ma's Homepage">
 
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
-  function toggleblock(blockId) {
-      var block = document.getElementById(blockId);
-      if (block.style.display == 'none') {
-          block.style.display = 'block';
-      } else {
-          block.style.display = 'none';
-      }
-  }
-
-  function hideblock(blockId) {
-      var block = document.getElementById(blockId);
-      block.style.display = 'none';
-  }
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]//function(){
+    (i[r].q=i[r].q//[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-41102261-2', 'auto');
+    ga('send', 'pageview');
 </script>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -38,15 +29,15 @@
               <p style="text-align:center">
                 <name>Xiaoxuan Ma (马霄璇)</name>
               </p>
-              <p>I'm a second-year Ph.D. student in Computer Science at <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University. I'm a member of the <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">Computer Vision and Digital Art group</a>, advised by <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Prof. Yizhou Wang</a>. I received my Bachelor's and Master's degrees in Computer Science from Peking University in 2018 and 2021, respectively.
+              <p>I'm a second-year Ph.D. student in Computer Science at <a href="http://cfcs.pku.edu.cn/", target="_blank">CFCS</a>, Peking University. I'm a member of the <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm", target="_blank">Computer Vision and Digital Art group</a>, advised by <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Prof. Yizhou Wang</a>. I received my Bachelor's and Master's degrees in Computer Science from Peking University in 2018 and 2021, respectively.
               </p>
               <p style="text-align:center">
                 <a href="mailto:maxiaoxuan@pku.edu.cn">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
                 <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.com/citations?user=mjP_5SEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/%E9%9C%84%E7%92%87-%E9%A9%AC-740b7b122/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://github.com/ShirleyMaxx">Github</a>
+                <a href="https://scholar.google.com/citations?user=mjP_5SEAAAAJ&hl=en", target="_blank">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/%E9%9C%84%E7%92%87-%E9%A9%AC-740b7b122/", target="_blank">LinkedIn</a> &nbsp/&nbsp
+                <a href="https://github.com/ShirleyMaxx", target="_blank">Github</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -56,279 +47,158 @@
         </tbody></table>
 
         <!-- Research -->
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                I'm interested in computer vision and machine learning, especially 3D human pose estimation and reconstruction. 
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="virtualpose_stop()" onmouseover="virtualpose_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='virtualpose_image'>
-                  <img src='images/virturalpose.png' width="160"></div>
-                <img src='images/virturalpose.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function virtualpose_start() {
-                  document.getElementById('virtualpose_image').style.opacity = "1";
-                }
-
-                function virtualpose_stop() {
-                  document.getElementById('virtualpose_image').style.opacity = "0";
-                }
-                virtualpose_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2207.09949">
-                <papertitle>Virtual Pose: Learning Generalizable 3D Human Pose Models from Virtual Data</papertitle>
-              </a>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr><td>
+            <h2>Research</h2>
+            <p align="justify">I'm interested in computer vision and machine learning, especially 3D human pose estimation and reconstruction. </p>
+          </td></tr>
+        </table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="33%" valign="top"><a href="images/virturalpose.png"><img src="images/virturalpose.png" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/abs/2207.09949", target="_blank" id="">
+              <heading>Virtual Pose: Learning Generalizable 3D Human Pose Models from Virtual Data</heading></a>
               <br>
-              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN">Jiajun Su</a>,
-              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su</a>,
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
               <strong>Xiaoxuan Ma</strong>,
-              <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=zh-CN">Wenjun Zeng</a>,
-              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <a href="https://scholar.google.com/citations?user=_cUfvYQAAAAJ&hl=zh-CN", target="_blank">Wenjun Zeng</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
               <em>ECCV</em>, 2022
-              <br>
-              <a href="javascript:toggleblock('VirtualPose_abs')">abs</a>
-              /
-              <a href="javascript:toggleblock('VirtualPose_bib')">bibtex</a>
-              /
-              <a href="https://arxiv.org/abs/2207.09949">arXiv</a>
-              /
-              <a href="https://github.com/wkom/VirtualPose">code</a>
-              <abstext xml:space="preserve" id="VirtualPose_abs">
-                While monocular 3D pose estimation seems to have achieved very accurate results on the public datasets, their generalization ability is largely overlooked. In this work, we perform a systematic evaluation of the existing methods and find that they get notably larger errors when tested on different cameras, human poses and appearance. To address the problem, we introduce VirtualPose, a two-stage learning framework to exploit the hidden "free lunch" specific to this task, i.e. generating infinite number of poses and cameras for training models at no cost. To that end, the first stage transforms images to abstract geometry representations (AGR), and then the second maps them to 3D poses. It addresses the generalization issue from two aspects: (1) the first stage can be trained on diverse 2D datasets to reduce the risk of over-fitting to limited appearance; (2) the second stage can be trained on diverse AGR synthesized from a large number of virtual cameras and poses. It outperforms the SOTA methods without using any paired images and 3D poses from the benchmarks, which paves the way for practical applications.
-              </abstext>
-              <bibtext xml:space="preserve" id="VirtualPose_bib">
-                TBD
-              </bibtext>
-              <script language="JavaScript">
-                hideblock('VirtualPose_abs');
-              </script>
-              <script language="JavaScript">
-                  hideblock('VirtualPose_bib');
-              </script>
-              <p></p>
-              <p>
-              We address the generalization issues in monocular 3D absolute pose estimation by introducing an intermediate representation termed Abstract Geometry Representation (AGR).
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="contextpose_stop()" onmouseover="contextpose_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='contextpose_image'>
-                  <img src='images/contextpose.gif' width="160"></div>
-                <img src='images/contextpose.gif' width="160">
+              <br></p>
+              <div class="paper" id="VirtualPose">
+                <a href="javascript:toggleblock('VirtualPose_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('VirtualPose')" class="togglebib">bibtex</a> /
+                <a href="https://arxiv.org/abs/2207.09949", target="_blank">paper</a> /
+                <a href="https://github.com/wkom/VirtualPose", target="_blank">code</a>
+		      
+                <p align="justify"> <i id="VirtualPose_abs">While monocular 3D pose estimation seems to have achieved very accurate results on the public datasets, their generalization ability is largely overlooked. In this work, we perform a systematic evaluation of the existing methods and find that they get notably larger errors when tested on different cameras, human poses and appearance. To address the problem, we introduce VirtualPose, a two-stage learning framework to exploit the hidden "free lunch" specific to this task, i.e. generating infinite number of poses and cameras for training models at no cost. To that end, the first stage transforms images to abstract geometry representations (AGR), and then the second maps them to 3D poses. It addresses the generalization issue from two aspects: (1) the first stage can be trained on diverse 2D datasets to reduce the risk of over-fitting to limited appearance; (2) the second stage can be trained on diverse AGR synthesized from a large number of virtual cameras and poses. It outperforms the SOTA methods without using any paired images and 3D poses from the benchmarks, which paves the way for practical applications.</i></p>
+                <pre xml:space="preserve">
+                  TBD
+                </pre>
+                <p>
+                We address the generalization issues in monocular 3D absolute pose estimation by introducing an intermediate representation termed Abstract Geometry Representation (AGR).
+                </p>
               </div>
-              <script type="text/javascript">
-                function contextpose_start() {
-                  document.getElementById('contextpose_image').style.opacity = "1";
-                }
-
-                function contextpose_stop() {
-                  document.getElementById('contextpose_image').style.opacity = "0";
-                }
-                contextpose_stop()
-              </script>
             </td>
+          </tr>  
 
-            
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf">
-                <papertitle>Context Modeling in 3D Human Pose Estimation: A Unified Perspective</papertitle>
-              </a>
+          <tr>
+            <td width="33%" valign="top"><a href="images/contextpose.gif"><img src="images/contextpose.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf", target="_blank" id="">
+              <heading>Context Modeling in 3D Human Pose Estimation: A Unified Perspective</heading></a>
               <br>
               <strong>Xiaoxuan Ma*</strong>,
-              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN">Jiajun Su*</a>,
-              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
-              <a href="https://hai-ci.netlify.app">Hai Ci</a>,
-              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su*</a>,
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
+              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
               <em>CVPR</em>, 2021
-              <br>
-              <a href="javascript:toggleblock('Ma_2021_CVPR_abs')">abs</a>
-              /
-              <a href="javascript:toggleblock('Ma_2021_CVPR_bib')">bibtex</a>
-              /
-              <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf">paper</a>
-              /
-              <a href="https://github.com/ShirleyMaxx/ContextPose-PyTorch-release">code</a>
-              <abstext xml:space="preserve" id="Ma_2021_CVPR_abs">
-                Estimating 3D human pose from a single image suffers from severe ambiguity since multiple 3D joint configurations may have the same 2D projection. The state-of-the-art methods often rely on context modeling methods such as pictorial structure model (PSM) or graph neural network (GNN) to reduce ambiguity. However, there is no study that rigorously compares them side by side. So we first present a general formula for context modeling in which both PSM and GNN are its special cases. By comparing the two methods, we found that the end-to-end training scheme in GNN and the limb length constraints in PSM are two complementary factors to improve results. To combine their advantages, we propose ContextPose based on attention mechanism that allows enforcing soft limb length constraints in a deep network. The approach effectively reduces the chance of getting absurd 3D pose estimates with incorrect limb lengths and achieves state-of-the-art results on two benchmark datasets. More importantly, the introduction of limb length constraints into deep networks enables the approach to achieve much better generalization performance.
-              </abstext>
-              <bibtext xml:space="preserve" id="Ma_2021_CVPR_bib">
-                @InProceedings{Ma_2021_CVPR, <br />
-                  author    = {Ma, Xiaoxuan and Su, Jiajun and Wang, Chunyu and Ci, Hai and Wang, Yizhou},<br />
-                  title     = {Context Modeling in 3D Human Pose Estimation: A Unified Perspective},<br />
-                  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},<br />
-                  month     = {June},<br />
-                  year      = {2021},<br />
-                  pages     = {6238-6247}<br />}
-              </bibtext>
-              <script language="JavaScript">
-                hideblock('Ma_2021_CVPR_abs');
-              </script>
-              <script language="JavaScript">
-                hideblock('Ma_2021_CVPR_bib');
-              </script>
-              <p></p>
-              <p>
-              We propose a general formula of context modeling in monocular 3D human pose estimation task.
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="lcn_pami_stop()" onmouseover="lcn_pami_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='lcn_pami_image'>
-                  <img src='images/lcn_pami.png' width="160"></div>
-                <img src='images/lcn_pami.png' width="160">
+              <br></p>
+              <div class="paper" id="ContextPose">
+                <a href="javascript:toggleblock('ContextPose_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('ContextPose')" class="togglebib">bibtex</a> /
+                <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf", target="_blank">paper</a> /
+                <a href="https://github.com/ShirleyMaxx/ContextPose-PyTorch-release", target="_blank">code</a>
+		      
+                <p align="justify"> <i id="ContextPose_abs">Estimating 3D human pose from a single image suffers from severe ambiguity since multiple 3D joint configurations may have the same 2D projection. The state-of-the-art methods often rely on context modeling methods such as pictorial structure model (PSM) or graph neural network (GNN) to reduce ambiguity. However, there is no study that rigorously compares them side by side. So we first present a general formula for context modeling in which both PSM and GNN are its special cases. By comparing the two methods, we found that the end-to-end training scheme in GNN and the limb length constraints in PSM are two complementary factors to improve results. To combine their advantages, we propose ContextPose based on attention mechanism that allows enforcing soft limb length constraints in a deep network. The approach effectively reduces the chance of getting absurd 3D pose estimates with incorrect limb lengths and achieves state-of-the-art results on two benchmark datasets. More importantly, the introduction of limb length constraints into deep networks enables the approach to achieve much better generalization performance.</i></p>
+                <pre xml:space="preserve">@InProceedings{Ma_2021_CVPR,
+author= {Ma, Xiaoxuan and Su, Jiajun and Wang, Chunyu and Ci, Hai and Wang, Yizhou},
+title= {Context Modeling in 3D Human Pose Estimation: A Unified Perspective},
+booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+month= {June},
+year= {2021},
+pages= {6238-6247}}</pre>
+                <p>
+                We propose a general formula of context modeling in monocular 3D human pose estimation task.
+                </p>
               </div>
-              <script type="text/javascript">
-                function lcn_pami_start() {
-                  document.getElementById('lcn_pami_image').style.opacity = "1";
-                }
-
-                function lcn_pami_stop() {
-                  document.getElementById('lcn_pami_image').style.opacity = "0";
-                }
-                lcn_pami_stop()
-              </script>
             </td>
+          </tr>  
 
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/document/9174911">
-                <papertitle>Locally Connected Network for Monocular 3D Human Pose Estimation</papertitle>
-              </a>
+          <tr>
+            <td width="33%" valign="top"><a href="images/lcn_pami.png"><img src="images/lcn_pami.png" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://ieeexplore.ieee.org/document/9174911", target="_blank" id="">
+              <heading>Locally Connected Network for Monocular 3D Human Pose Estimation</heading></a>
               <br>
-              <a href="https://hai-ci.netlify.app">Hai Ci*</a>,
+              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci*</a>,
               <strong>Xiaoxuan Ma*</strong>,
-              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
-              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
               <em>T-PAMI</em>, 2020
-              <br>
-              <a href="javascript:toggleblock('Ci_2020_TPAMI_abs')">abs</a>
-              /
-              <a href="javascript:toggleblock('Ci_2020_TPAMI_bib')">bibtex</a>
-              /
-              <a href="https://ieeexplore.ieee.org/document/9174911">paper</a>
-              /
-              <a href="https://github.com/CHUNYUWANG/lcn-pose">code</a>
-
-              <abstext xml:space="preserve" id="Ci_2020_TPAMI_abs">
-                We present an approach for 3D human pose estimation from monocular images. The approach consists of two steps: it first estimates a 2D pose from an image and then estimates the corresponding 3D pose. This paper focuses on the second step. Graph convolutional network (GCN) has recently become the de facto standard for human pose related tasks such as action recognition. However, in this work, we show that GCN has critical limitations when it is used for 3D pose estimation due to the inherent weight sharing scheme. The limitations are clearly exposed through a novel reformulation of GCN, in which both GCN and Fully Connected Network (FCN) are its special cases. In addition, on top of the formulation, we present locally connected network (LCN) to overcome the limitations of GCN by allocating dedicated rather than shared filters for different joints. We jointly train the LCN network with a 2D pose estimator such that it can handle inaccurate 2D poses. We evaluate our approach on two benchmark datasets and observe that LCN outperforms GCN, FCN, and the state-of-the-art methods by a large margin. More importantly, it demonstrates strong cross-dataset generalization ability because of sparse connections among body joints.
-              </abstext>
-              <bibtext xml:space="preserve" id="Ci_2020_TPAMI_bib">
-                @ARTICLE{9174911,<br />
-                  author={Ci, Hai and Ma, Xiaoxuan and Wang, Chunyu and Wang, Yizhou},<br />
-                  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, <br />
-                  title={Locally Connected Network for Monocular 3D Human Pose Estimation}, <br />
-                  year={2022},<br />
-                  volume={44},<br />
-                  number={3},<br />
-                  pages={1429-1442},<br />
-                  doi={10.1109/TPAMI.2020.3019139}<br />
-                }
-              </bibtext>
-              <script language="JavaScript">
-                hideblock('Ci_2020_TPAMI_abs');
-              </script>
-              <script language="JavaScript">
-                hideblock('Ci_2020_TPAMI_bib');
-              </script>
-              <p></p>
-              <p>
-              We present an end-to-end approach by using Locally Connected Network (LCN) to estimate 3D human pose from a monocular image.
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="lcn_stop()" onmouseover="lcn_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='lcn_image'>
-                  <img src='images/lcn.gif' width="160"></div>
-                <img src='images/lcn.gif' width="160">
+              <br></p>
+              <div class="paper" id="LCN_PAMI">
+                <a href="javascript:toggleblock('LCN_PAMI_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('LCN_PAMI')" class="togglebib">bibtex</a> /
+                <a href="https://ieeexplore.ieee.org/document/9174911", target="_blank">paper</a> /
+                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a>
+		      
+                <p align="justify"> <i id="LCN_PAMI_abs">We present an approach for 3D human pose estimation from monocular images. The approach consists of two steps: it first estimates a 2D pose from an image and then estimates the corresponding 3D pose. This paper focuses on the second step. Graph convolutional network (GCN) has recently become the de facto standard for human pose related tasks such as action recognition. However, in this work, we show that GCN has critical limitations when it is used for 3D pose estimation due to the inherent weight sharing scheme. The limitations are clearly exposed through a novel reformulation of GCN, in which both GCN and Fully Connected Network (FCN) are its special cases. In addition, on top of the formulation, we present locally connected network (LCN) to overcome the limitations of GCN by allocating dedicated rather than shared filters for different joints. We jointly train the LCN network with a 2D pose estimator such that it can handle inaccurate 2D poses. We evaluate our approach on two benchmark datasets and observe that LCN outperforms GCN, FCN, and the state-of-the-art methods by a large margin. More importantly, it demonstrates strong cross-dataset generalization ability because of sparse connections among body joints.</i></p>
+                <pre xml:space="preserve">@ARTICLE{9174911,
+author={Ci, Hai and Ma, Xiaoxuan and Wang, Chunyu and Wang, Yizhou},
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+title={Locally Connected Network for Monocular 3D Human Pose Estimation}, 
+year={2022},
+volume={44},
+number={3},
+pages={1429-1442},
+doi={10.1109/TPAMI.2020.3019139}}</pre>
+                <p>
+                  We present an end-to-end approach by using Locally Connected Network (LCN) to estimate 3D human pose from a monocular image.
+                </p>
               </div>
-              <script type="text/javascript">
-                function lcn_start() {
-                  document.getElementById('lcn_image').style.opacity = "1";
-                }
-
-                function lcn_stop() {
-                  document.getElementById('lcn_image').style.opacity = "0";
-                }
-                lcn_stop()
-              </script>
             </td>
+          </tr> 
 
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html">
-                <papertitle>Optimizing Network Structure for 3D Human Pose Estimation</papertitle>
-              </a>
+          <tr>
+            <td width="33%" valign="top"><a href="images/lcn.gif"><img src="images/lcn.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html", target="_blank" id="">
+              <heading>Optimizing Network Structure for 3D Human Pose Estimation</heading></a>
               <br>
-              <a href="https://hai-ci.netlify.app">Hai Ci</a>,
-              <a href="https://www.chunyuwang.org/">Chunyu Wang</a>, 
+              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci</a>,
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
               <strong>Xiaoxuan Ma</strong>,
-              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
               <em>ICCV</em>, 2019
-              <br>
-              <a href="javascript:toggleblock('Ci_2019_ICCV_abs')">abs</a>
-              /
-              <a href="javascript:toggleblock('Ci_2019_ICCV_bib')">bibtex</a>
-              /
-              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html">paper</a>
-              /
-              <a href="https://github.com/CHUNYUWANG/lcn-pose">code</a>
-              <abstext xml:space="preserve" id="Ci_2019_ICCV_abs">
-                A human pose is naturally represented as a graph where the joints are the nodes and the bones are the edges. So it is natural to apply Graph Convolutional Network (GCN) to estimate 3D poses from 2D poses. In this work, we propose a generic formulation where both GCN and Fully Connected Network (FCN) are its special cases. From this formulation, we discover that GCN has limited representation power when used for estimating 3D poses. We overcome the limitation by introducing Locally Connected Network (LCN) which is naturally implemented by this generic formulation. It notably improves the representation capability over GCN. In addition, since every joint is only connected to a few joints in its neighborhood, it has strong generalization power. The experiments on public datasets show it: (1) outperforms the state-of-the-arts; (2) is less data hungry than alternative models; (3) generalizes well to unseen actions and datasets.
-              </abstext>
-              <bibtext xml:space="preserve" id="Ci_2019_ICCV_bib">
-                @InProceedings{Ci_2019_ICCV,<br />
-                author = {Ci, Hai and Wang, Chunyu and Ma, Xiaoxuan and Wang, Yizhou},<br />
-                title = {Optimizing Network Structure for 3D Human Pose Estimation},<br />
-                booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},<br />
-                month = {October},<br />
-                year = {2019}<br />
-                }
-              </bibtext>
-              <script language="JavaScript">
-                hideblock('Ci_2019_ICCV_abs');
-              </script>
-              <script language="JavaScript">
-                hideblock('Ci_2019_ICCV_bib');
-              </script>
-              <p></p>
-              <p>
-              We present Locally Connected Network (LCN) to overcome the limitations of GCN in 3D human pose estimation.
-              </p>
+              <br></p>
+              <div class="paper" id="LCN">
+                <a href="javascript:toggleblock('LCN_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('LCN')" class="togglebib">bibtex</a> /
+                <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html", target="_blank">paper</a> /
+                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a>
+		      
+                <p align="justify"> <i id="LCN_abs">A human pose is naturally represented as a graph where the joints are the nodes and the bones are the edges. So it is natural to apply Graph Convolutional Network (GCN) to estimate 3D poses from 2D poses. In this work, we propose a generic formulation where both GCN and Fully Connected Network (FCN) are its special cases. From this formulation, we discover that GCN has limited representation power when used for estimating 3D poses. We overcome the limitation by introducing Locally Connected Network (LCN) which is naturally implemented by this generic formulation. It notably improves the representation capability over GCN. In addition, since every joint is only connected to a few joints in its neighborhood, it has strong generalization power. The experiments on public datasets show it: (1) outperforms the state-of-the-arts; (2) is less data hungry than alternative models; (3) generalizes well to unseen actions and datasets.</i></p>
+                <pre xml:space="preserve">@InProceedings{Ci_2019_ICCV,
+author = {Ci, Hai and Wang, Chunyu and Ma, Xiaoxuan and Wang, Yizhou},
+title = {Optimizing Network Structure for 3D Human Pose Estimation},
+booktitle = {Proceedings of the IEEE/CVF 
+International Conference on Computer Vision (ICCV)},
+month = {October},
+year = {2019}}</pre>
+                <p>
+                  We present Locally Connected Network (LCN) to overcome the limitations of GCN in 3D human pose estimation.
+                </p>
+              </div>
             </td>
-          </tr>
+          </tr> 
 
-        </tbody></table>
+        </table>
+
 
         <!-- Education -->
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Education</heading>
-            </td>
-          </tr>
-        </tbody></table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr><td>
+            <h2>Education</h2>
+          </td></tr>
+        </table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
             <td style="padding:10px;width:25%;vertical-align:middle">
@@ -337,11 +207,11 @@
             <td width="75%" valign="center">
               Ph.D. candidate
               <br>
-              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">CVDA Lab, <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University, Beijing
+              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm", target="_blank">CVDA Lab, <a href="http://cfcs.pku.edu.cn/", target="_blank">CFCS</a>, Peking University, Beijing
               <br>
               Sep. 2021 ~ Now
               <br>
-              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
             </td>
           </tr>
 
@@ -352,11 +222,11 @@
             <td width="75%" valign="center">
               Master's degree
               <br>
-              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm">CVDA Lab, <a href="http://cfcs.pku.edu.cn/">CFCS</a>, Peking University, Beijing
+              <a href="http://cfcs.pku.edu.cn/research/research_labs/238405.htm", target="_blank">CVDA Lab, <a href="http://cfcs.pku.edu.cn/", target="_blank">CFCS</a>, Peking University, Beijing
               <br>
               Sep. 2018 ~ Jun. 2021
               <br>
-              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm">Yizhou Wang</a>
+              Supervisor: Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
             </td>
           </tr>
           
@@ -367,69 +237,20 @@
             <td width="75%" valign="center">
               Bachelor's degree
               <br>
-              <a href="https://eecs.pku.edu.cn/">Depart. of Computer Science</a>, Peking University, Beijing, China
+              <a href="https://eecs.pku.edu.cn/", target="_blank">Depart. of Computer Science</a>, Peking University, Beijing, China
               <br>
               Sep. 2014 ~ Jun. 2018
               <br>
             </td>
           </tr>
-
-        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-              <br>
-              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-              <br>
-              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr>
-					
-
-          <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Basically <br> Blog Posts</heading>
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-              <br>
-              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-              <br>
-              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-            </td>
-          </tr>
 					
 					
-        </tbody></table> -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Website template from <a href="https://jonbarron.info/">Jon Barron</a>.
+                Website template from <a href="https://jonbarron.info/", target="_blank">Jon Barron</a>.
               </p>
             </td>
           </tr>
@@ -437,6 +258,23 @@
       </td>
     </tr>
   </table>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('VirtualPose_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('ContextPose_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('LCN_PAMI_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('LCN_abs');
+</script>
+
 </body>
 
 </html>

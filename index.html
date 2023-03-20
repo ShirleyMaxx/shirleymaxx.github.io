@@ -55,7 +55,72 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           <tr>
-            <td width="33%" valign="top"><a href="images/virturalpose.png"><img src="images/virturalpose.png" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="images/cvpr23_virtualmarker.gif"><img src="images/cvpr23_virtualmarker.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="TBD", target="_blank" id="">
+              <heading>3D Human Mesh Estimation from Virtual Markers</heading></a>
+              <br>
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su</a>,
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>CVPR</em>, 2023
+              <br></p>
+              <div class="paper" id="VirtualMarker">
+                <a href="javascript:toggleblock('VirtualMarker_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('VirtualMarker')" class="togglebib">bibtex</a> /
+                <a href="TBD", target="_blank">paper</a> /
+                <a href="https://github.com/ShirleyMaxx/VirtualMarker", target="_blank">code</a>
+		      
+                <p align="justify"> <i id="VirtualMarker_abs">Inspired by the success of volumetric 3D pose estimation, some recent human mesh estimators propose to estimate 3D skeletons as intermediate representations, from which, the dense 3D meshes are regressed by exploiting the mesh topology. However, body shape information is lost in extracting skeletons, leading to mediocre performance. The advanced motion capture systems solve the problem by placing dense physical markers on the body surface, which allows to extract realistic meshes from their non-rigid motions. However, they cannot be applied to wild images without markers. In this work, we present an intermediate representation, named virtual markers, which learns 64 landmark keypoints on the body surface based on the large-scale mocap data in a generative style, mimicking the effects of physical markers. The virtual markers can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation. Our approach outperforms the state-of-the-art methods on three datasets. In particular, it surpasses the existing methods by a notable margin on the SURREAL dataset, which has diverse body shapes.</i></p>
+                <pre xml:space="preserve">TBD</pre>
+                <p>
+                We introduce a novel representation named <i>virtual markers</i>, mimicking the effects of physical markers, which can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation.
+                </p>
+              </div>
+            </td>
+          </tr>  
+
+          <tr>
+            <td width="33%" valign="top"><a href="images/cvpr23_gfpose.png"><img src="images/cvpr23_gfpose.png" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/pdf/2212.08641.pdf", target="_blank" id="">
+              <heading>GFPose: Learning 3D Human Pose Prior with Gradient Fields</heading></a>
+              <br>
+              <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
+              <a href="https://aaronanima.github.io/", target="_blank">Mingdong Wu</a>,
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://zsdonghao.github.io/", target="_blank">Hao Dong</a>,
+              <a href="https://fangweizhong.xyz/", target="_blank">Fangwei Zhong</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>CVPR</em>, 2023
+              <br></p>
+              <div class="paper" id="GFPose">
+                <a href="javascript:toggleblock('GFPose_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('GFPose')" class="togglebib">bibtex</a> /
+                <a href="https://arxiv.org/pdf/2212.08641.pdf", target="_blank">paper</a> /
+                <a href="https://github.com/Embracing/GFPose", target="_blank">code</a> /
+                <a href="https://sites.google.com/view/gfpose/home", target="_blank">project page</a>
+		      
+                <p align="justify"> <i id="GFPose_abs">Learning 3D human pose prior is essential to human-centered AI. Here, we present GFPose, a versatile framework to model plausible 3D human poses for various applications. At the core of GFPose is a time-dependent score network, which estimates the gradient on each body joint and progressively denoises the perturbed 3D human pose to match a given task specification. During the denoising process, GFPose implicitly incorporates pose priors in gradients and unifies various discriminative and generative tasks in an elegant framework. Despite the simplicity, GFPose demonstrates great potential in several downstream tasks. Our experiments empirically show that 1) as a multi-hypothesis pose estimator, GFPose outperforms existing SOTAs by 20% on Human3.6M dataset. 2) as a single-hypothesis pose estimator, GFPose achieves comparable results to deterministic SOTAs, even with a vanilla backbone. 3) GFPose is able to produce diverse and realistic samples in pose denoising, completion and generation tasks.</i></p>
+                <pre xml:space="preserve">@article{ci2022gfpose,
+  title = {GFPose: Learning 3D Human Pose Prior with Gradient Fields},
+  author = {Ci, Hai and Wu, Mingdong and Zhu, Wentao and Ma, Xiaoxuan and Dong, Hao and Zhong, Fangwei and Wang, Yizhou},
+  journal = {arXiv preprint arXiv:2212.08641},
+  year = {2023},}</pre>
+                <p>
+                We present GFPose, a versatile and elegant framework to model plausible 3D human poses for various applications, by implicitly incorporates pose priors in gradient fiedls.
+                </p>
+              </div>
+            </td>
+          </tr>  
+
+          <tr>
+            <td width="33%" valign="top"><a href="images/eccv22_virturalpose.png"><img src="images/eccv22_virturalpose.png" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660054.pdf", target="_blank" id="">
               <heading>Virtual Pose: Learning Generalizable 3D Human Pose Models from Virtual Data</heading></a>
@@ -90,7 +155,7 @@
           </tr>  
 
           <tr>
-            <td width="33%" valign="top"><a href="images/contextpose.gif"><img src="images/contextpose.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="images/cvpr21_contextpose.gif"><img src="images/cvpr21_contextpose.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf", target="_blank" id="">
               <heading>Context Modeling in 3D Human Pose Estimation: A Unified Perspective</heading></a>
@@ -98,7 +163,7 @@
               <strong>Xiaoxuan Ma*</strong>,
               <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su*</a>,
               <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
-              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci</a>,
+              <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
               <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
               <em>CVPR</em>, 2021
@@ -125,12 +190,12 @@ pages= {6238-6247}}</pre>
           </tr>  
 
           <tr>
-            <td width="33%" valign="top"><a href="images/lcn_pami.png"><img src="images/lcn_pami.png" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="images/tpami22_lcn_pami.png"><img src="images/tpami22_lcn_pami.png" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://ieeexplore.ieee.org/document/9174911", target="_blank" id="">
               <heading>Locally Connected Network for Monocular 3D Human Pose Estimation</heading></a>
               <br>
-              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci*</a>,
+              <a href="https://haici.cc/", target="_blank">Hai Ci*</a>,
               <strong>Xiaoxuan Ma*</strong>,
               <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
               <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
@@ -161,12 +226,12 @@ doi={10.1109/TPAMI.2020.3019139}}</pre>
           </tr> 
 
           <tr>
-            <td width="33%" valign="top"><a href="images/lcn.gif"><img src="images/lcn.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="images/iccv19_lcn.gif"><img src="images/iccv19_lcn.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
-              <p><a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html", target="_blank" id="">
+              <p><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.pdf", target="_blank" id="">
               <heading>Optimizing Network Structure for 3D Human Pose Estimation</heading></a>
               <br>
-              <a href="https://hai-ci.netlify.app", target="_blank">Hai Ci</a>,
+              <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
               <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
               <strong>Xiaoxuan Ma</strong>,
               <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
@@ -176,7 +241,7 @@ doi={10.1109/TPAMI.2020.3019139}}</pre>
               <div class="paper" id="LCN">
                 <a href="javascript:toggleblock('LCN_abs')">abstract</a> /
                 <a shape="rect" href="javascript:togglebib('LCN')" class="togglebib">bibtex</a> /
-                <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.html", target="_blank">paper</a> /
+                <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.pdf", target="_blank">paper</a> /
                 <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a>
 		      
                 <p align="justify"> <i id="LCN_abs">A human pose is naturally represented as a graph where the joints are the nodes and the bones are the edges. So it is natural to apply Graph Convolutional Network (GCN) to estimate 3D poses from 2D poses. In this work, we propose a generic formulation where both GCN and Fully Connected Network (FCN) are its special cases. From this formulation, we discover that GCN has limited representation power when used for estimating 3D poses. We overcome the limitation by introducing Locally Connected Network (LCN) which is naturally implemented by this generic formulation. It notably improves the representation capability over GCN. In addition, since every joint is only connected to a few joints in its neighborhood, it has strong generalization power. The experiments on public datasets show it: (1) outperforms the state-of-the-arts; (2) is less data hungry than alternative models; (3) generalizes well to unseen actions and datasets.</i></p>
@@ -265,6 +330,12 @@ year = {2019}}</pre>
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('VirtualMarker_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('GFPose_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('VirtualPose_abs');

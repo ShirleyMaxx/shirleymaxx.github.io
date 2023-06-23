@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>ChimpACT</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1296">
+    <meta property="og:image:height" content="840">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ChimpACT: A Longitudinal Dataset for Understanding Chimpanzee Behaviors" />
+    <meta property="og:description" content="Understanding the behavior of non-human primates is crucial for scientific research, increasing animal welfare, modeling human social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of chimpanzee behavior datasets limits the study of primates' social dynamics and interactions and hinders the research into our closest living relatives. To tackle the limitations, we offer <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior of individuals inside a chimpanzee group. This dataset contains videos from 2015 to 2018 of a group of chimpanzees residing in Leipzig Zoo, Germany, with a particular focus on documenting the development of one young male, Azibo, within a social group of more than 20 individuals. The <span>ChimpACT</span> dataset is both challenging and comprehensive, consisting of 163 videos with in total of 161,980 frames, richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <span>ChimpACT</span>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Experimental results demonstrate that <span>ChimpACT</span> presents a wealth of opportunities to develop new methods and transfer existing approaches for solving fundamental tasks in chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately advancing our understanding of communication and sociality in non-human primates."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ChimpACT: A Longitudinal Dataset for Understanding Chimpanzee Behaviors" />
+    <meta name="twitter:description" content="Understanding the behavior of non-human primates is crucial for scientific research, increasing animal welfare, modeling human social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of chimpanzee behavior datasets limits the study of primates' social dynamics and interactions and hinders the research into our closest living relatives. To tackle the limitations, we offer <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior of individuals inside a chimpanzee group. This dataset contains videos from 2015 to 2018 of a group of chimpanzees residing in Leipzig Zoo, Germany, with a particular focus on documenting the development of one young male, Azibo, within a social group of more than 20 individuals. The <span>ChimpACT</span> dataset is both challenging and comprehensive, consisting of 163 videos with in total of 161,980 frames, richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <span>ChimpACT</span>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Experimental results demonstrate that <span>ChimpACT</span> presents a wealth of opportunities to develop new methods and transfer existing approaches for solving fundamental tasks in chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately advancing our understanding of communication and sociality in non-human primates."
+    />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+    <style> 
+        span {
+          font-family: Courier;
+        }
+        .emoji-chimp {
+            height: 1em; /* Set the height of the image to match the font size */
+            vertical-align: middle; /* Align the image vertically with the text */
+          }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b><img src="images/icon2.png" alt="Emoji Chimp" class="emoji-chimp"><span>ChimpACT</span>: A Longitudinal Dataset for <br> Understanding Chimpanzee Behaviors</b><br>
+                <small>
+                        submitted to NeurIPS 2023 Track on Datasets and Benchmarks
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://shirleymaxx.github.io/", target="_blank">Xiaoxuan Ma</a><sup>*,1</sup>,
+                    </li>
+                    <li>
+                        <a href="https://carta.anthropogeny.org/users/stephan-kaufhold", target="_blank">Stephan P. Kaufhold</a><sup>*,2</sup>,
+                    </li>
+                    
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su</a><sup>*,1</sup>,
+                    </li>
+                    <li>
+                        <a href="https://wentao.live/", target="_blank">Wentao Zhu</a><sup>1</sup>,
+                    </li>
+                    <li>
+                        <a href="http://jackterwilliger.com/", target="_blank">Jack Terwilliger</a><sup>2</sup>,
+                    </li><br>
+                    <li>
+                        <a href="https://www.linkedin.com/in/andy-meza-9bb064213/", target="_blank">Andres Meza</a><sup>2</sup>, 
+                    </li> 
+                    <li>
+                        <a href="https://yzhu.io/", target="_blank">Yixin Zhu</a><sup>3</sup>,
+                    </li>
+                    <li>
+                        <a href="https://cogsci.ucsd.edu/people/faculty/federico-rossano.html", target="_blank">Federico Rossano</a><sup>2</sup>,
+                    </li>
+                    <li>
+                        <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a><sup>1,3</sup>
+                    </li>
+                </ul>
+                <p><sup>1</sup>Center for Frontiers of Computing Studies, PKU, China <br> 
+                    <sup>2</sup>Department of Cognitive Science, University of California, San Diego, USA &nbsp;&nbsp;
+                    <sup>3</sup>Institute for Artificial Intelligence, PKU, China <br>
+                    <sup>*</sup>Corresponding author
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified" style="margin-top:10px">
+                    <!-- <a href="" target="_blank">
+                            <strong><font size="+1">[Paper]</font></strong>
+                    </a> -->
+                    <!-- &nbsp;&nbsp;&nbsp;&nbsp; -->
+                    <a href="" target="_blank">
+                            <strong><font size="+1">[Code]</font></strong>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://chinapku-my.sharepoint.com/:u:/g/personal/2101111546_pku_edu_cn/Eb5Lg2YpVtlNmUjwoCN3VZMBqOTHXLMg7fyfcGqqe2Rk_g?e=TOzQCd" target="_blank">
+                            <strong><font size="+1">[Dataset]</font></strong>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" src="images/annots.mp4" type="images/annots.mp4"></video>
+            </div>
+            <div class="col-md-8 col-md-offset-2 ">
+                <p class="text-center ">
+                    We introduce a comprehensive dataset for deciphering the longitudinal behavior of individuals inside a chimpanzee group.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h3>
+                    <b>Abstract</b>
+                </h3>
+                <p class="text-justify ">
+                    Understanding the behavior of non-human primates is crucial for scientific research, increasing animal welfare, modeling human social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of chimpanzee behavior datasets limits the study of primates' social dynamics and interactions and hinders the research into our closest living relatives. To tackle the limitations, we offer <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior of individuals inside a chimpanzee group. This dataset contains videos from 2015 to 2018 of a group of chimpanzees residing in Leipzig Zoo, Germany, with a particular focus on documenting the development of one young male, Azibo, within a social group of more than 20 individuals. The <span>ChimpACT</span> dataset is both challenging and comprehensive, consisting of 163 videos with in total of 161,980 frames, richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <span>ChimpACT</span>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Experimental results demonstrate that <span>ChimpACT</span> presents a wealth of opportunities to develop new methods and transfer existing approaches for solving fundamental tasks in chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately advancing our understanding of communication and sociality in non-human primates.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <b>Video</b>
+                </h3>
+                <div class="text-center">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/KGwDLg8Mn7I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br> 
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h3>
+                    <b>Dataset Description</b>
+                </h3>
+                <div class=" ">
+                    <div style="position:relative text-center">
+                        <h4><b>Kinship & Ethogram</b></h4>
+                        <a href="images/ethogram.png"><img src="images/ethogram.png" width="100%" style="border-style: none"></a>
+                    </div>
+                    <div style="position:relative text-center">
+                        <h4><b>Semi-naturalistic and social environment</b></h4>
+                        <video width="48%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                            <source src="images/raw_video1.mp4" type="video/mp4">
+                        </video>
+                        <video width="48%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                            <source src="images/raw_video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <h3>
+                    <b>Rich annotations</b>
+                </h3>
+                <div class=" ">
+                    <div style="position:relative text-center">
+                        <h4><b>Detection, tracking, re-identification</b></h4>
+                        <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                            <source src="images/detection.mp4" type="video/mp4">
+                        </video>
+                        <h4><b>Pose</b></h4>
+                        <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                            <source src="images/pose.mp4" type="video/mp4">
+                        </video>
+                        <h4><b>Spatiotemporal action</b></h4>
+                        <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+                            <source src="images/action.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <b>Citation</b>
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+</textarea>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <!-- <h3>
+                    Acknowledgements
+                </h3> -->
+                <p class="text-justify">
+                    The website template was borrowed from <a href="https://jonbarron.info/mipnerf360/">Jon Barron</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

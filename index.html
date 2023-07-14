@@ -55,6 +55,42 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           <tr>
+            <td width="33%" valign="top"><a href="https://motionbert.github.io/assets/teaser.gif"><img src="https://motionbert.github.io/assets/teaser.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/pdf/2210.06551.pdf", target="_blank" id="">
+              <heading>Learning Human Motion Representations: A Unified Perspective</heading></a>
+              <br>
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=btgwZosAAAAJ&hl=en", target="_blank">Zhaoyang Liu</a>, 
+              <a href="https://libliu.info/", target="_blank">Libin Liu</a>, 
+              <a href="https://wywu.github.io/", target="_blank">Wayne Wu</a>, 
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>ICCV</em>, 2023
+              <br></p>
+              <div class="paper" id="MotionBERT">
+                <a href="javascript:toggleblock('MotionBERT_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('MotionBERT')" class="togglebib">bibtex</a> /
+                <a href="https://arxiv.org/pdf/2210.06551.pdf", target="_blank">paper</a> /
+                <a href="https://github.com/Walter0807/MotionBERT/", target="_blank">code</a> /
+                <a href="https://motionbert.github.io/", target="_blank">project page</a>
+		      
+                <p align="justify"> <i id="MotionBERT_abs">We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources. Specifically, we propose a pretraining stage in which a motion encoder is trained to recover the underlying 3D motion from noisy partial 2D observations. The motion representations acquired in this way incorporate geometric, kinematic, and physical knowledge about human motion, which can be easily transferred to multiple downstream tasks. We implement the motion encoder with a Dual-stream Spatio-temporal Transformer (DSTformer) neural network. It could capture long-range spatio-temporal relationships among the skeletal joints comprehensively and adaptively, exemplified by the lowest 3D pose estimation error so far when trained from scratch. Furthermore, our proposed framework achieves state-of-the-art performance on all three downstream tasks by simply finetuning the pretrained motion encoder with a simple regression head (1-2 layers), which demonstrates the versatility of the learned motion representations.</i></p>
+                <pre xml:space="preserve">@article{motionbert2022,
+  title   =   {Learning Human Motion Representations: A Unified Perspective}, 
+  author  =   {Zhu, Wentao and Ma, Xiaoxuan and Liu, Zhaoyang and Liu, Libin and Wu, Wayne and Wang, Yizhou},
+  year    =   {2022},
+  journal =   {arXiv preprint arXiv:2210.06551},
+}</pre>
+                <p>
+                  We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources.
+                </p>
+              </div>
+            </td>
+          </tr>  
+          
+          <tr>
             <td width="33%" valign="top"><a href="images/cvpr23_virtualmarker.gif"><img src="images/cvpr23_virtualmarker.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://arxiv.org/pdf/2303.11726.pdf", target="_blank" id="">
@@ -335,6 +371,9 @@ year = {2019}}</pre>
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('MotionBERT_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('VirtualMarker_abs');

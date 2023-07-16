@@ -77,11 +77,11 @@
                 <a href="https://motionbert.github.io/", target="_blank">project page</a>
 		      
                 <p align="justify"> <i id="MotionBERT_abs">We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources. Specifically, we propose a pretraining stage in which a motion encoder is trained to recover the underlying 3D motion from noisy partial 2D observations. The motion representations acquired in this way incorporate geometric, kinematic, and physical knowledge about human motion, which can be easily transferred to multiple downstream tasks. We implement the motion encoder with a Dual-stream Spatio-temporal Transformer (DSTformer) neural network. It could capture long-range spatio-temporal relationships among the skeletal joints comprehensively and adaptively, exemplified by the lowest 3D pose estimation error so far when trained from scratch. Furthermore, our proposed framework achieves state-of-the-art performance on all three downstream tasks by simply finetuning the pretrained motion encoder with a simple regression head (1-2 layers), which demonstrates the versatility of the learned motion representations.</i></p>
-                <pre xml:space="preserve">@article{motionbert2022,
+                <pre xml:space="preserve">@inproceedings{motionbert2022,
   title   =   {Learning Human Motion Representations: A Unified Perspective}, 
   author  =   {Zhu, Wentao and Ma, Xiaoxuan and Liu, Zhaoyang and Liu, Libin and Wu, Wayne and Wang, Yizhou},
-  year    =   {2022},
-  journal =   {arXiv preprint arXiv:2210.06551},
+  year    =   {2023},
+  booktitle =   {Proceedings of the IEEE/CVF International Conference on Computer Vision},
 }</pre>
                 <p>
                   We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources.
@@ -112,11 +112,13 @@
                 <a href="https://shirleymaxx.github.io/virtual_marker", target="_blank">project page</a>
 		      
                 <p align="justify"> <i id="VirtualMarker_abs">Inspired by the success of volumetric 3D pose estimation, some recent human mesh estimators propose to estimate 3D skeletons as intermediate representations, from which, the dense 3D meshes are regressed by exploiting the mesh topology. However, body shape information is lost in extracting skeletons, leading to mediocre performance. The advanced motion capture systems solve the problem by placing dense physical markers on the body surface, which allows to extract realistic meshes from their non-rigid motions. However, they cannot be applied to wild images without markers. In this work, we present an intermediate representation, named virtual markers, which learns 64 landmark keypoints on the body surface based on the large-scale mocap data in a generative style, mimicking the effects of physical markers. The virtual markers can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation. Our approach outperforms the state-of-the-art methods on three datasets. In particular, it surpasses the existing methods by a notable margin on the SURREAL dataset, which has diverse body shapes.</i></p>
-                <pre xml:space="preserve">@article{ma20233d,
+                <pre xml:space="preserve">@inproceedings{ma20233d,
   title={3D Human Mesh Estimation from Virtual Markers},
   author={Ma, Xiaoxuan and Su, Jiajun and Wang, Chunyu and Zhu, Wentao and Wang, Yizhou},
-  journal={arXiv preprint arXiv:2303.11726},
-  year={2023}}</pre>
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={534--543},
+  year={2023}
+}</pre>
                 <p>
                 We introduce a novel representation named <i>virtual markers</i>, mimicking the effects of physical markers, which can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation.
                 </p>
@@ -148,11 +150,13 @@
                 <a href="https://sites.google.com/view/gfpose/home", target="_blank">project page</a>
 		      
                 <p align="justify"> <i id="GFPose_abs">Learning 3D human pose prior is essential to human-centered AI. Here, we present GFPose, a versatile framework to model plausible 3D human poses for various applications. At the core of GFPose is a time-dependent score network, which estimates the gradient on each body joint and progressively denoises the perturbed 3D human pose to match a given task specification. During the denoising process, GFPose implicitly incorporates pose priors in gradients and unifies various discriminative and generative tasks in an elegant framework. Despite the simplicity, GFPose demonstrates great potential in several downstream tasks. Our experiments empirically show that 1) as a multi-hypothesis pose estimator, GFPose outperforms existing SOTAs by 20% on Human3.6M dataset. 2) as a single-hypothesis pose estimator, GFPose achieves comparable results to deterministic SOTAs, even with a vanilla backbone. 3) GFPose is able to produce diverse and realistic samples in pose denoising, completion and generation tasks.</i></p>
-                <pre xml:space="preserve">@article{ci2022gfpose,
-  title = {GFPose: Learning 3D Human Pose Prior with Gradient Fields},
-  author = {Ci, Hai and Wu, Mingdong and Zhu, Wentao and Ma, Xiaoxuan and Dong, Hao and Zhong, Fangwei and Wang, Yizhou},
-  journal = {arXiv preprint arXiv:2212.08641},
-  year = {2023}}</pre>
+                <pre xml:space="preserve">@inproceedings{ci2023gfpose,
+  title={Gfpose: Learning 3d human pose prior with gradient fields},
+  author={Ci, Hai and Wu, Mingdong and Zhu, Wentao and Ma, Xiaoxuan and Dong, Hao and Zhong, Fangwei and Wang, Yizhou},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4800--4810},
+  year={2023}
+}</pre>
                 <p>
                 We present GFPose, a versatile and elegant framework to model plausible 3D human poses for various applications, by implicitly incorporates pose priors in gradient fiedls.
                 </p>

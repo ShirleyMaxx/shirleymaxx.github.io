@@ -50,10 +50,47 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr><td>
             <h2>Research</h2>
-            <p align="justify">I'm interested in computer vision and machine learning, especially 3D human pose estimation and reconstruction. </p>
+            <p align="justify">I'm interested in computer vision and machine learning, especially 3D human. </p>
           </td></tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="33%" valign="top"><a href="images/motion_generation_survey.png"><img src="images/motion_generation_survey.png" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/pdf/2307.10894.pdf", target="_blank" id="">
+              <heading>Human Motion Generation: A Survey</heading></a>
+              <br>
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu*</a>,
+              <strong>Xiaoxuan Ma*</strong>,
+              <a href="https://github.com/dwro0121", target="_blank">Dongwoo Ro*</a>,
+              <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
+              <a href="https://jinluzhang.site/", target="_blank">Jinlu Zhang</a>,
+              <a href="https://shijx12.github.io/", target="_blank">Jiaxin Shi</a>,
+              <a href="https://www.art.pku.edu.cn/szdw/qzjs/ysglx/gf/index.htm", target="_blank">Feng Gao</a>,
+              <a href="https://www.qitian1987.com/", target="_blank">Qi Tian</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>Arxiv</em>, 2023
+              <br></p>
+              <div class="paper" id="MotionGenerationSurvey">
+                <a href="javascript:toggleblock('MotionGenerationSurvey_abs')">abstract</a> /
+                <a href="https://arxiv.org/pdf/2307.10894.pdf", target="_blank">paper</a> /
+                <a shape="rect" href="javascript:togglebib('MotionGenerationSurvey')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="MotionGenerationSurvey_abs">Human motion generation aims to generate natural human pose sequences and shows immense potential for real-world applications. Substantial progress has been made recently in motion data collection technologies and generation methods, laying the foundation for increasing interest in human motion generation. Most research within this field focuses on generating human motions based on conditional signals, such as text, audio, and scene contexts. While significant advancements have been made in recent years, the task continues to pose challenges due to the intricate nature of human motion and its implicit relationship with conditional signals. In this survey, we present a comprehensive literature review of human motion generation, which, to the best of our knowledge, is the first of its kind in this field. We begin by introducing the background of human motion and generative models, followed by an examination of representative methods for three mainstream sub-tasks: text-conditioned, audio-conditioned, and scene-conditioned human motion generation. Additionally, we provide an overview of common datasets and evaluation metrics. Lastly, we discuss open problems and outline potential future research directions. We hope that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.</i></p>
+                <pre xml:space="preserve">@article{zhu2023human,
+  title={Human Motion Generation: A Survey},
+  author={Zhu, Wentao and Ma, Xiaoxuan and Ro, Dongwoo and Ci, Hai and Zhang, Jinlu and Shi, Jiaxin and Gao, Feng and Tian, Qi and Wang, Yizhou},
+  journal={arXiv preprint arXiv:2307.10894},
+  year={2023}
+}</pre>
+                <p>
+                  We provide a survey on human motion generation, hoping that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.
+                </p>
+              </div>
+            </td>
+          </tr>  
+
           <tr>
             <td width="33%" valign="top"><a href="images/iccv23_motionbert_small.gif"><img src="images/iccv23_motionbert_small.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -71,10 +108,10 @@
               <br></p>
               <div class="paper" id="MotionBERT">
                 <a href="javascript:toggleblock('MotionBERT_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('MotionBERT')" class="togglebib">bibtex</a> /
                 <a href="https://arxiv.org/pdf/2210.06551.pdf", target="_blank">paper</a> /
                 <a href="https://github.com/Walter0807/MotionBERT/", target="_blank">code</a> /
-                <a href="https://motionbert.github.io/", target="_blank">project page</a>
+                <a href="https://motionbert.github.io/", target="_blank">project page</a> /
+                <a shape="rect" href="javascript:togglebib('MotionBERT')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="MotionBERT_abs">We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources. Specifically, we propose a pretraining stage in which a motion encoder is trained to recover the underlying 3D motion from noisy partial 2D observations. The motion representations acquired in this way incorporate geometric, kinematic, and physical knowledge about human motion, which can be easily transferred to multiple downstream tasks. We implement the motion encoder with a Dual-stream Spatio-temporal Transformer (DSTformer) neural network. It could capture long-range spatio-temporal relationships among the skeletal joints comprehensively and adaptively, exemplified by the lowest 3D pose estimation error so far when trained from scratch. Furthermore, our proposed framework achieves state-of-the-art performance on all three downstream tasks by simply finetuning the pretrained motion encoder with a simple regression head (1-2 layers), which demonstrates the versatility of the learned motion representations.</i></p>
                 <pre xml:space="preserve">@inproceedings{motionbert2022,
@@ -93,7 +130,7 @@
           <tr>
             <td width="33%" valign="top"><a href="images/cvpr23_virtualmarker.gif"><img src="images/cvpr23_virtualmarker.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
-              <p><a href="https://arxiv.org/pdf/2303.11726.pdf", target="_blank" id="">
+              <p><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ma_3D_Human_Mesh_Estimation_From_Virtual_Markers_CVPR_2023_paper.pdf", target="_blank" id="">
               <heading>3D Human Mesh Estimation from Virtual Markers</heading></a>
               <br>
               <strong>Xiaoxuan Ma</strong>,
@@ -106,10 +143,11 @@
               <br></p>
               <div class="paper" id="VirtualMarker">
                 <a href="javascript:toggleblock('VirtualMarker_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('VirtualMarker')" class="togglebib">bibtex</a> /
-                <a href="https://arxiv.org/pdf/2303.11726.pdf", target="_blank">paper</a> /
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ma_3D_Human_Mesh_Estimation_From_Virtual_Markers_CVPR_2023_paper.pdf", target="_blank">paper</a> /
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/supplemental/Ma_3D_Human_Mesh_CVPR_2023_supplemental.pdf", target="_blank">supplementary</a> /
                 <a href="https://github.com/ShirleyMaxx/VirtualMarker", target="_blank">code</a> /
-                <a href="https://shirleymaxx.github.io/virtual_marker", target="_blank">project page</a>
+                <a href="https://shirleymaxx.github.io/virtual_marker", target="_blank">project page</a> /
+                <a shape="rect" href="javascript:togglebib('VirtualMarker')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="VirtualMarker_abs">Inspired by the success of volumetric 3D pose estimation, some recent human mesh estimators propose to estimate 3D skeletons as intermediate representations, from which, the dense 3D meshes are regressed by exploiting the mesh topology. However, body shape information is lost in extracting skeletons, leading to mediocre performance. The advanced motion capture systems solve the problem by placing dense physical markers on the body surface, which allows to extract realistic meshes from their non-rigid motions. However, they cannot be applied to wild images without markers. In this work, we present an intermediate representation, named virtual markers, which learns 64 landmark keypoints on the body surface based on the large-scale mocap data in a generative style, mimicking the effects of physical markers. The virtual markers can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation. Our approach outperforms the state-of-the-art methods on three datasets. In particular, it surpasses the existing methods by a notable margin on the SURREAL dataset, which has diverse body shapes.</i></p>
                 <pre xml:space="preserve">@inproceedings{ma20233d,
@@ -129,7 +167,7 @@
           <tr>
             <td width="33%" valign="top"><a href="images/cvpr23_gfpose.png"><img src="images/cvpr23_gfpose.png" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
-              <p><a href="https://arxiv.org/pdf/2212.08641.pdf", target="_blank" id="">
+              <p><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ci_GFPose_Learning_3D_Human_Pose_Prior_With_Gradient_Fields_CVPR_2023_paper.pdf", target="_blank" id="">
               <heading>GFPose: Learning 3D Human Pose Prior with Gradient Fields</heading></a>
               <br>
               <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
@@ -144,10 +182,11 @@
               <br></p>
               <div class="paper" id="GFPose">
                 <a href="javascript:toggleblock('GFPose_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('GFPose')" class="togglebib">bibtex</a> /
-                <a href="https://arxiv.org/pdf/2212.08641.pdf", target="_blank">paper</a> /
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ci_GFPose_Learning_3D_Human_Pose_Prior_With_Gradient_Fields_CVPR_2023_paper.pdf", target="_blank">paper</a> /
+                <a href="https://openaccess.thecvf.com/content/CVPR2023/supplemental/Ci_GFPose_Learning_3D_CVPR_2023_supplemental.pdf", target="_blank">supplementary</a> /
                 <a href="https://github.com/Embracing/GFPose", target="_blank">code</a> /
-                <a href="https://sites.google.com/view/gfpose/home", target="_blank">project page</a>
+                <a href="https://sites.google.com/view/gfpose/home", target="_blank">project page</a> /
+                <a shape="rect" href="javascript:togglebib('GFPose')" class="togglebib">bibtex</a> 
 		      
                 <p align="justify"> <i id="GFPose_abs">Learning 3D human pose prior is essential to human-centered AI. Here, we present GFPose, a versatile framework to model plausible 3D human poses for various applications. At the core of GFPose is a time-dependent score network, which estimates the gradient on each body joint and progressively denoises the perturbed 3D human pose to match a given task specification. During the denoising process, GFPose implicitly incorporates pose priors in gradients and unifies various discriminative and generative tasks in an elegant framework. Despite the simplicity, GFPose demonstrates great potential in several downstream tasks. Our experiments empirically show that 1) as a multi-hypothesis pose estimator, GFPose outperforms existing SOTAs by 20% on Human3.6M dataset. 2) as a single-hypothesis pose estimator, GFPose achieves comparable results to deterministic SOTAs, even with a vanilla backbone. 3) GFPose is able to produce diverse and realistic samples in pose denoising, completion and generation tasks.</i></p>
                 <pre xml:space="preserve">@inproceedings{ci2023gfpose,
@@ -180,9 +219,9 @@
               <br></p>
               <div class="paper" id="VirtualPose">
                 <a href="javascript:toggleblock('VirtualPose_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('VirtualPose')" class="togglebib">bibtex</a> /
                 <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136660054.pdf", target="_blank">paper</a> /
-                <a href="https://github.com/wkom/VirtualPose", target="_blank">code</a>
+                <a href="https://github.com/wkom/VirtualPose", target="_blank">code</a> /
+                <a shape="rect" href="javascript:togglebib('VirtualPose')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="VirtualPose_abs">While monocular 3D pose estimation seems to have achieved very accurate results on the public datasets, their generalization ability is largely overlooked. In this work, we perform a systematic evaluation of the existing methods and find that they get notably larger errors when tested on different cameras, human poses and appearance. To address the problem, we introduce VirtualPose, a two-stage learning framework to exploit the hidden “free lunch” specific to this task, i.e.generating infinite number of poses and cameras for training models at no cost. To that end, the first stage transforms images to abstract geometry representations (AGR), and then the second maps them to 3D poses. It addresses the generalization issue from two aspects: (1) the first stage can be trained on diverse 2D datasets to reduce the risk of over-fitting to limited appearance; (2) the second stage can be trained on diverse AGR synthesized from a large number of virtual cameras and poses. It outperforms the SOTA methods without using any paired images and 3D poses from the benchmarks, which paves the way for practical applications.</i></p>
                 <pre xml:space="preserve">@inproceedings{su2022virtualpose,
@@ -215,9 +254,9 @@
               <br></p>
               <div class="paper" id="ContextPose">
                 <a href="javascript:toggleblock('ContextPose_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('ContextPose')" class="togglebib">bibtex</a> /
                 <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf", target="_blank">paper</a> /
-                <a href="https://github.com/ShirleyMaxx/ContextPose-PyTorch-release", target="_blank">code</a>
+                <a href="https://github.com/ShirleyMaxx/ContextPose-PyTorch-release", target="_blank">code</a> /
+                <a shape="rect" href="javascript:togglebib('ContextPose')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="ContextPose_abs">Estimating 3D human pose from a single image suffers from severe ambiguity since multiple 3D joint configurations may have the same 2D projection. The state-of-the-art methods often rely on context modeling methods such as pictorial structure model (PSM) or graph neural network (GNN) to reduce ambiguity. However, there is no study that rigorously compares them side by side. So we first present a general formula for context modeling in which both PSM and GNN are its special cases. By comparing the two methods, we found that the end-to-end training scheme in GNN and the limb length constraints in PSM are two complementary factors to improve results. To combine their advantages, we propose ContextPose based on attention mechanism that allows enforcing soft limb length constraints in a deep network. The approach effectively reduces the chance of getting absurd 3D pose estimates with incorrect limb lengths and achieves state-of-the-art results on two benchmark datasets. More importantly, the introduction of limb length constraints into deep networks enables the approach to achieve much better generalization performance.</i></p>
                 <pre xml:space="preserve">@InProceedings{Ma_2021_CVPR,
@@ -249,9 +288,9 @@ pages= {6238-6247}}</pre>
               <br></p>
               <div class="paper" id="LCN_PAMI">
                 <a href="javascript:toggleblock('LCN_PAMI_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('LCN_PAMI')" class="togglebib">bibtex</a> /
                 <a href="https://ieeexplore.ieee.org/document/9174911", target="_blank">paper</a> /
-                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a>
+                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a> /
+                <a shape="rect" href="javascript:togglebib('LCN_PAMI')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="LCN_PAMI_abs">We present an approach for 3D human pose estimation from monocular images. The approach consists of two steps: it first estimates a 2D pose from an image and then estimates the corresponding 3D pose. This paper focuses on the second step. Graph convolutional network (GCN) has recently become the de facto standard for human pose related tasks such as action recognition. However, in this work, we show that GCN has critical limitations when it is used for 3D pose estimation due to the inherent weight sharing scheme. The limitations are clearly exposed through a novel reformulation of GCN, in which both GCN and Fully Connected Network (FCN) are its special cases. In addition, on top of the formulation, we present locally connected network (LCN) to overcome the limitations of GCN by allocating dedicated rather than shared filters for different joints. We jointly train the LCN network with a 2D pose estimator such that it can handle inaccurate 2D poses. We evaluate our approach on two benchmark datasets and observe that LCN outperforms GCN, FCN, and the state-of-the-art methods by a large margin. More importantly, it demonstrates strong cross-dataset generalization ability because of sparse connections among body joints.</i></p>
                 <pre xml:space="preserve">@ARTICLE{9174911,
@@ -285,9 +324,9 @@ doi={10.1109/TPAMI.2020.3019139}}</pre>
               <br></p>
               <div class="paper" id="LCN">
                 <a href="javascript:toggleblock('LCN_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('LCN')" class="togglebib">bibtex</a> /
                 <a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Ci_Optimizing_Network_Structure_for_3D_Human_Pose_Estimation_ICCV_2019_paper.pdf", target="_blank">paper</a> /
-                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a>
+                <a href="https://github.com/CHUNYUWANG/lcn-pose", target="_blank">code</a> /
+                <a shape="rect" href="javascript:togglebib('LCN')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="LCN_abs">A human pose is naturally represented as a graph where the joints are the nodes and the bones are the edges. So it is natural to apply Graph Convolutional Network (GCN) to estimate 3D poses from 2D poses. In this work, we propose a generic formulation where both GCN and Fully Connected Network (FCN) are its special cases. From this formulation, we discover that GCN has limited representation power when used for estimating 3D poses. We overcome the limitation by introducing Locally Connected Network (LCN) which is naturally implemented by this generic formulation. It notably improves the representation capability over GCN. In addition, since every joint is only connected to a few joints in its neighborhood, it has strong generalization power. The experiments on public datasets show it: (1) outperforms the state-of-the-arts; (2) is less data hungry than alternative models; (3) generalizes well to unseen actions and datasets.</i></p>
                 <pre xml:space="preserve">@InProceedings{Ci_2019_ICCV,
@@ -375,6 +414,9 @@ year = {2019}}</pre>
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+<script xml:space="preserve" language="JavaScript">
+hideblock('MotionGenerationSurvey_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('MotionBERT_abs');

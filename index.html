@@ -81,8 +81,13 @@
                 <a href="https://shirleymaxx.github.io/ChimpACT/", target="_blank">project page</a> /
                 <a shape="rect" href="javascript:togglebib('ChimpACT')" class="togglebib">bibtex</a>
                     
-                <p align="justify"> <i id="ChimpACT_abs">Understanding the behavior of non-human primates is crucial for improving animal welfare, modeling social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of datasets on non-human primate behavior hinders in-depth exploration of primate social interactions, posing challenges to research on our closest living relatives. To address these limitations, we present <span>ChimpACT</span>, a comprehensive dataset for quantifying the longitudinal behavior and social relations of chimpanzees within a social group. Spanning from 2015 to 2018, <span>ChimpACT</span> features videos of a group of over 20 chimpanzees residing at the Leipzig Zoo, Germany, with a particular focus on documenting the developmental trajectory of one young male, Azibo. <span>ChimpACT</span> is both comprehensive and challenging, consisting of 163 videos with a cumulative 160,500 frames, each richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <span>ChimpACT</span>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Our experiments reveal that <span>ChimpACT</span> offers ample opportunities for both devising new methods and adapting existing ones to solve fundamental computer vision tasks applied to chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately deepening our comprehension of communication and sociality in non-human primates.</i></p>
-                <pre xml:space="preserve"></pre>
+                <p align="justify"> <i id="ChimpACT_abs">Understanding the behavior of non-human primates is crucial for improving animal welfare, modeling social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of datasets on non-human primate behavior hinders in-depth exploration of primate social interactions, posing challenges to research on our closest living relatives. To address these limitations, we present <b>ChimpACT</b>, a comprehensive dataset for quantifying the longitudinal behavior and social relations of chimpanzees within a social group. Spanning from 2015 to 2018, <b>ChimpACT</b> features videos of a group of over 20 chimpanzees residing at the Leipzig Zoo, Germany, with a particular focus on documenting the developmental trajectory of one young male, Azibo. <b>ChimpACT</b> is both comprehensive and challenging, consisting of 163 videos with a cumulative 160,500 frames, each richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <b>ChimpACT</b>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Our experiments reveal that <b>ChimpACT</b> offers ample opportunities for both devising new methods and adapting existing ones to solve fundamental computer vision tasks applied to chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately deepening our comprehension of communication and sociality in non-human primates.</i></p>
+                <pre xml:space="preserve">@inproceedings{ma2023chimpact,
+    title={ChimpACT: A Longitudinal Dataset for Understanding Chimpanzee Behaviors},
+    author={Ma, Xiaoxuan and Stephan P. Kaufhold and Su, Jiajun and Zhu, Wentao and Jack Terwilliger and Andres Meza and Zhu, Yixin and Federico Rossano and Wang, Yizhou},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023}
+}</pre>
                 <p>
                   We propose <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior and social relations of chimpanzees within a social group, hoping to advance our understanding of communication and sociality in non-human primates.
                 </p>
@@ -91,9 +96,9 @@
           </tr>  
 
           <tr>
-            <td width="33%" valign="top"><a href="images/nips23_socialmotion.png"><img src="images/nips23_socialmotion.png" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="https://walter0807.github.io/Social-CH/assets/teaser.gif"><img src="https://walter0807.github.io/Social-CH/assets/teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
-              <p><a href="", target="_blank" id="">
+              <p><a href="https://arxiv.org/pdf/2311.04726.pdf", target="_blank" id="">
               <heading>Social Motion Prediction with Cognitive Hierarchies</b><br></heading></a>
               <br>
               <a href="https://wentao.live/", target="_blank">Wentao Zhu*</a>,
@@ -108,13 +113,19 @@
               <br></p>
               <div class="paper" id="SocialMotion">
                 <a href="javascript:toggleblock('SocialMotion_abs')">abstract</a> /
-                <a href="", target="_blank">paper (coming soon)</a> /
-                <a href="", target="_blank">code (coming soon)</a> /
-                <a href="", target="_blank">data (coming soon) </a> /
+                <a href="https://arxiv.org/pdf/2311.04726.pdf", target="_blank">paper</a> /
+                <a href="https://github.com/Walter0807/Social-CH", target="_blank">code</a> /
+                <a href="https://github.com/Walter0807/Social-CH", target="_blank">data</a> /
+                <a href="https://walter0807.github.io/Social-CH/", target="_blank">project page</a> /
                 <a shape="rect" href="javascript:togglebib('SocialMotion')" class="togglebib">bibtex</a>
                     
-                <p align="justify"> <i id="SocialMotion_abs">Humans exhibit a remarkable capacity for anticipating the actions of others and planning their own actions accordingly. In this study, we strive to replicate this ability by addressing the social motion prediction problem. We introduce a new benchmark, a novel formulation, and a cognition-inspired framework. We collect a large-scale 3D multi-person motion dataset under the context of team sports, which features intense human interactions and diverse pose distributions. By reformulating the problem from a multi-agent reinforcement learning perspective, we incorporate behavioral cloning and generative adversarial imitation learning to boost learning efficiency and generalization. Furthermore, we take into account the cognitive aspects of the human social action planning process and develop a cognitive hierarchy framework to predict strategic human social interactions. We conduct comprehensive experiments to validate the effectiveness of our proposed dataset and approach.</i></p>
-                <pre xml:space="preserve"></pre>
+                <p align="justify"> <i id="SocialMotion_abs">Humans exhibit a remarkable capacity for anticipating the actions of others and planning their own actions accordingly. In this study, we strive to replicate this ability by addressing the social motion prediction problem. We introduce a new benchmark, a novel formulation, and a cognition-inspired framework. We present <b>Wusi</b>, a 3D multi-person motion dataset under the context of team sports, which features intense and strategic human interactions and diverse pose distributions. By reformulating the problem from a multi-agent reinforcement learning perspective, we incorporate behavioral cloning and generative adversarial imitation learning to boost learning efficiency and generalization. Furthermore, we take into account the cognitive aspects of the human social action planning process and develop a cognitive hierarchy framework to predict strategic human social interactions. We conduct comprehensive experiments to validate the effectiveness of our proposed dataset and approach.</i></p>
+                <pre xml:space="preserve">@inproceedings{zhu2023social,
+    title={Social Motion Prediction with Cognitive Hierarchies},
+    author={Zhu, Wentao and Qin, Jason and Lou, Yuke and Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Wang, Yizhou},
+    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+    year={2023}
+}</pre>
                 <p>
                   We provide a large-scale 3D multi-person motion dataset under the context of team sports, which features intense human interactions and diverse pose distributions.
                 </p>
@@ -138,7 +149,7 @@
               <a href="https://www.qitian1987.com/", target="_blank">Qi Tian</a>,
               <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
               <br>
-              <em>Arxiv</em>, 2023
+              <em>TPAMI</em>, 2023
               <br></p>
               <div class="paper" id="MotionGenerationSurvey">
                 <a href="javascript:toggleblock('MotionGenerationSurvey_abs')">abstract</a> /
@@ -160,7 +171,7 @@
           </tr>  
 
           <tr>
-            <td width="33%" valign="top"><a href="images/iccv23_motionbert_small.gif"><img src="images/iccv23_motionbert_small.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="https://motionbert.github.io/assets/teaser.gif"><img src="https://motionbert.github.io/assets/teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.pdf", target="_blank" id="">
               <heading>MotionBERT: A Unified Perspective on Learning Human Motion Representations</heading></a>
@@ -199,7 +210,7 @@
           </tr>  
           
           <tr>
-            <td width="33%" valign="top"><a href="images/cvpr23_virtualmarker.gif"><img src="images/cvpr23_virtualmarker.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="https://shirleymaxx.github.io/virtual_marker/images/cvpr23_virtualmarker_crop.gif"><img src="https://shirleymaxx.github.io/virtual_marker/images/cvpr23_virtualmarker_crop.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Ma_3D_Human_Mesh_Estimation_From_Virtual_Markers_CVPR_2023_paper.pdf", target="_blank" id="">
               <heading>3D Human Mesh Estimation from Virtual Markers</heading></a>

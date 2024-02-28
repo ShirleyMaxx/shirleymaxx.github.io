@@ -84,11 +84,11 @@
                             <strong><font size="+1">[Paper]</font></strong>
                     </a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="" target="_blank">
+                    <a href="https://github.com/lizishi/DeTRC" target="_blank">
                             <strong><font size="+1">[Code]</font></strong>
                     </a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=EmBAE9kDHLA" target="_blank">
                             <strong><font size="+1">[Video]</font></strong>
                     </a>
                 </ul>
@@ -104,7 +104,7 @@
             </div>
             <div class="col-md-8 col-md-offset-2 ">
                 <p class="text-center ">
-                    We provide a novel perspective to tackle the Temporal Repetition Counting problem using a simple yet effective representation for action cycles, reducing the computational complexity from <b>quadratic</b> to <b>linear</b> with SOTA performance.
+                    <b>TL;DR:</b> We provide a novel perspective to tackle the Temporal Repetition Counting problem using a simple yet effective representation for action cycles, reducing the computational complexity from <b>quadratic</b> to <b>linear</b> with SOTA performance.
                 </p>
             </div>
         </div>
@@ -151,19 +151,21 @@
                 <h3>
                     <b>Qualitative results</b>
                 </h3>
-                <div class=" ">
-                    <div style="position:relative text-center">
-                        <div style="display: flex; justify-content: center;"><video class="vid1" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu1_27.mp4" type="video/mp4"></video></div> 
-                        <br> 
-                        <br> 
-                        <div style="display: flex; justify-content: center;"><video class="vid2" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu2_39.mp4" type="video/mp4"></video></div> 
-                        <br> 
-                        <br> 
-                        <div style="display: flex; justify-content: center;"><video class="vid3" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu6_68.mp4" type="video/mp4"></video></div>
-                        <br> 
-                        <br> 
-                        <div style="display: flex; justify-content: center;"><video class="vid4" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu7_8.mp4" type="video/mp4"></video></div>
-                    </div>
+                <br>
+                We visualize the predictions of our approach. Each colored block denotes the estimated action interval. The counting result is shown above the video.
+                <br>
+                <br>
+                <div style="text-align: center;">
+                    <div style="display:inline;"><video class="vid" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu1_27.mp4" type="video/mp4"></video></div> 
+                    <br> 
+                    <br> 
+                    <div style="display:inline;"><video class="vid" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu2_39.mp4" type="video/mp4"></video></div> 
+                    <br> 
+                    <br> 
+                    <div style="display:inline;"><video class="vid" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu6_68.mp4" type="video/mp4"></video></div>
+                    <br> 
+                    <br> 
+                    <div style="display:inline;"><video class="vid" width="70%" height="100%" autoplay loop muted controls src="images/demos/stu7_8.mp4" type="video/mp4"></video></div>
                 </div>
             </div>
         </div>
@@ -177,13 +179,16 @@
                 </h3>
 
                 <br>
-                <div style="display:inline;"><video class="vid1" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota1.mp4" type="video/mp4"></video></div>
+                We compare our method with SOTA method TransRAC. TransRAC represents the results by density map, and the final count value is obtained by summing the values in the density map. 
                 <br>
                 <br>
-                <div style="display:inline;"><video class="vid1" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota2.mp4" type="video/mp4"></video></div>
+                <div style="display:inline;"><video class="vid" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota1.mp4" type="video/mp4"></video></div>
                 <br>
                 <br>
-                <div style="display:inline;"><video class="vid1" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota3.mp4" type="video/mp4"></video></div>
+                <div style="display:inline;"><video class="vid" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota2.mp4" type="video/mp4"></video></div>
+                <br>
+                <br>
+                <div style="display:inline;"><video class="vid" width="100%" height="100%" autoplay loop muted controls src="images/demos/sota3.mp4" type="video/mp4"></video></div>
 
  
             </div>
@@ -193,17 +198,21 @@
         <br>
 
 
-        <!-- <div class="row">
+        <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     <b>Citation</b>
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
                     <textarea id="bibtex" class="form-control" readonly>
-</textarea>
+@article{li2024efficient,
+    title={Efficient Action Counting with Dynamic Queries},
+    author={Li, Zishi and Ma, Xiaoxuan and Shang, Qiuyan and Zhu, Wentao and Qiao, Yu and Wang, Yizhou},
+    year={2024}
+}</textarea>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
         <div class="row">

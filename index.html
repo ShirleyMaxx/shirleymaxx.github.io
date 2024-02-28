@@ -55,10 +55,43 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           <tr>
+            <td width="33%" valign="top"><a href="images/cvpr24_scorehypo.gif"><img src="images/cvpr24_scorehypo.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="", target="_blank" id="">
+              <heading>Probabilistic Human Mesh Estimation with Hypothesis Scoring</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <a href="https://xy02-05.github.io/", target="_blank">Yuan Xu</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su</a>,
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <a href="http://www.pami.sjtu.edu.cn/yuqiao", target="_blank">Yu Qiao</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>CVPR</em>, 2024
+              <br></p>
+              <div class="paper" id="ScoreHypo">
+                <a href="javascript:toggleblock('ScoreHypo_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('ScoreHypo')" class="togglebib">bibtex</a>
+                    
+                <p align="justify"> <i id="ScoreHypo_abs">Monocular 3D human mesh estimation is an ill-posed problem, characterized by inherent ambiguity and occlusion. While recent probabilistic methods propose generating multiple solutions, little attention is paid to obtaining high-quality estimates from them. To address this limitation, we introduce a versatile framework by first leveraging our novel <b>HypoNet</b> to generate multiple hypotheses, followed by employing a meticulously designed scorer, <b>ScoreNet</b>, to evaluate and select high-quality estimates. Our framework formulates the estimation process as a reverse denoising process, where HypoNet produces a diverse set of plausible estimates that effectively align with the image cues. Subsequently, ScoreNet is employed to rigorously evaluate and rank these estimates based on their quality and finally identify superior ones. Experimental results demonstrate that HypoNet outperforms existing state-of-the-art probabilistic methods as a multi-hypothesis mesh estimator. Moreover, the estimates selected by ScoreNet significantly outperform random generation or simple averaging. Notably, the trained ScoreNet exhibits generalizability, as it can effectively score existing methods and significantly reduce their errors by more than 16mm.</i></p>
+                <pre xml:space="preserve">@inproceedings{xu2024probabilistic,
+  title={Probabilistic Human Mesh Estimation with Hypothesis Scoring},
+  author={Xu, Yuan and Ma, Xiaoxuan and Su, Jiajun and Zhu, Wentao and Qiao, Yu and Wang, Yizhou},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}</pre>
+                <p>
+                  Our framework, featuring HypoNet and ScoreNet, advances monocular 3D human mesh estimation by generating multiple hypotheses with HypoNet and selecting the most accurate estimates using ScoreNet, efficiently tackling inherent ambiguities in the task.
+                </p>
+              </div>
+            </td>
+          </tr> 
+
+          <tr>
             <td width="33%" valign="top"><a href="images/nipsdb23_ChimpACT.gif"><img src="images/nipsdb23_ChimpACT.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://arxiv.org/pdf/2310.16447.pdf", target="_blank" id="">
-              <heading><b><img src="ChimpACT/images/icon.png" alt="Emoji Chimp" class="emoji-chimp" height="15px">&nbsp; <span>ChimpACT</span>: A Longitudinal Dataset for Understanding Chimpanzee Behaviors</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <heading><b><img src="ChimpACT/images/icon.png" alt="Emoji Chimp" class="emoji-chimp" height="15px">&nbsp; <span>ChimpACT</span>: A Longitudinal Dataset for Understanding Chimpanzee Behaviors</b></heading></a>
               <br>
               <strong>Xiaoxuan Ma*</strong>,
               <a href="https://carta.anthropogeny.org/users/stephan-kaufhold", target="_blank">Stephan P. Kaufhold*</a>,
@@ -99,7 +132,7 @@
             <td width="33%" valign="top"><a href="https://walter0807.github.io/Social-CH/assets/teaser.gif"><img src="https://walter0807.github.io/Social-CH/assets/teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://arxiv.org/pdf/2311.04726.pdf", target="_blank" id="">
-              <heading>Social Motion Prediction with Cognitive Hierarchies</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <heading>Social Motion Prediction with Cognitive Hierarchies</b></heading></a>
               <br>
               <a href="https://wentao.live/", target="_blank">Wentao Zhu*</a>,
               <a href="https://asonin.github.io/2022/09/23/intro/", target="_blank">Jason Qin*</a>,
@@ -138,7 +171,7 @@
             <td width="33%" valign="top"><a href="images/motion_generation_survey.png"><img src="images/motion_generation_survey.png" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://arxiv.org/pdf/2307.10894.pdf", target="_blank" id="">
-              <heading>Human Motion Generation: A Survey</heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <heading>Human Motion Generation: A Survey</heading></a>
               <br>
               <a href="https://wentao.live/", target="_blank">Wentao Zhu*</a>,
               <strong>Xiaoxuan Ma*</strong>,
@@ -499,6 +532,9 @@ year = {2019}}</pre>
 hideallbibs();
 </script>
 
+<script xml:space="preserve" language="JavaScript">
+hideblock('ScoreHypo_abs');
+</script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('SocialMotion_abs');
 </script>

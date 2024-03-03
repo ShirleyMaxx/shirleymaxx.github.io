@@ -55,10 +55,10 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           <tr>
-            <td width="33%" valign="top"><a href="images/cvpr24_scorehypo.gif"><img src="images/cvpr24_scorehypo.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="https://github.com/xy02-05/ScoreHypo/blob/main/assets/teaser.gif"><img src="https://github.com/xy02-05/ScoreHypo/blob/main/assets/teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="", target="_blank" id="">
-              <heading>Probabilistic Human Mesh Estimation with Hypothesis Scoring</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <heading>ScoreHypo: Probabilistic Human Mesh Estimation with Hypothesis Scoring</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
               <br>
               <a href="https://xy02-05.github.io/", target="_blank">Yuan Xu</a>,
               <strong>Xiaoxuan Ma</strong>,
@@ -71,17 +71,59 @@
               <br></p>
               <div class="paper" id="ScoreHypo">
                 <a href="javascript:toggleblock('ScoreHypo_abs')">abstract</a> /
+                <a target="_blank">paper (coming soon)</a> /
+                <a href="https://github.com/xy02-05/ScoreHypo", target="_blank">code</a> /
+                <a href="https://xy02-05.github.io/ScoreHypo", target="_blank">project page</a> /
                 <a shape="rect" href="javascript:togglebib('ScoreHypo')" class="togglebib">bibtex</a>
                     
-                <p align="justify"> <i id="ScoreHypo_abs">Monocular 3D human mesh estimation is an ill-posed problem, characterized by inherent ambiguity and occlusion. While recent probabilistic methods propose generating multiple solutions, little attention is paid to obtaining high-quality estimates from them. To address this limitation, we introduce a versatile framework by first leveraging our novel <b>HypoNet</b> to generate multiple hypotheses, followed by employing a meticulously designed scorer, <b>ScoreNet</b>, to evaluate and select high-quality estimates. Our framework formulates the estimation process as a reverse denoising process, where HypoNet produces a diverse set of plausible estimates that effectively align with the image cues. Subsequently, ScoreNet is employed to rigorously evaluate and rank these estimates based on their quality and finally identify superior ones. Experimental results demonstrate that HypoNet outperforms existing state-of-the-art probabilistic methods as a multi-hypothesis mesh estimator. Moreover, the estimates selected by ScoreNet significantly outperform random generation or simple averaging. Notably, the trained ScoreNet exhibits generalizability, as it can effectively score existing methods and significantly reduce their errors by more than 16mm.</i></p>
+                <p align="justify"> <i id="ScoreHypo_abs">Monocular 3D human mesh estimation is an ill-posed problem, characterized by inherent ambiguity and occlusion. While recent probabilistic methods propose generating multiple solutions, little attention is paid to obtaining high-quality estimates from them. To address this limitation, we introduce <b>ScoreHypo</b>, a versatile framework by first leveraging our novel <b>HypoNet</b> to generate multiple hypotheses, followed by employing a meticulously designed scorer, <b>ScoreNet</b>, to evaluate and select high-quality estimates. Our framework formulates the estimation process as a reverse denoising process, where HypoNet produces a diverse set of plausible estimates that effectively align with the image cues. Subsequently, ScoreNet is employed to rigorously evaluate and rank these estimates based on their quality and finally identify superior ones. Experimental results demonstrate that HypoNet outperforms existing state-of-the-art probabilistic methods as a multi-hypothesis mesh estimator. Moreover, the estimates selected by ScoreNet significantly outperform random generation or simple averaging. Notably, the trained ScoreNet exhibits generalizability, as it can effectively score existing methods and significantly reduce their errors by more than 16mm.</i></p>
                 <pre xml:space="preserve">@inproceedings{xu2024probabilistic,
-  title={Probabilistic Human Mesh Estimation with Hypothesis Scoring},
+  title={ScoreHypo: Probabilistic Human Mesh Estimation with Hypothesis Scoring},
   author={Xu, Yuan and Ma, Xiaoxuan and Su, Jiajun and Zhu, Wentao and Qiao, Yu and Wang, Yizhou},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2024}
 }</pre>
                 <p>
-                  Our framework, featuring HypoNet and ScoreNet, advances monocular 3D human mesh estimation by generating multiple hypotheses with HypoNet and selecting the most accurate estimates using ScoreNet, efficiently tackling inherent ambiguities in the task.
+                  We introduce <i>ScoreHypo</i>, a versatile framework for probabilistic monocular 3D human mesh estimation by i) generating multiple hypotheses with <i>HypoNet</i> and ii) selecting high-quality ones with <i>ScoreNet</i>.
+                </p>
+              </div>
+            </td>
+          </tr> 
+
+          <tr>
+            <td width="33%" valign="top"><a href="images/cvpr24_trumans.gif"><img src="images/cvpr24_trumans.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="", target="_blank" id="">
+              <heading>Scaling Up Dynamic Human-Scene Interaction Modeling</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <a href="https://jnnan.github.io/", target="_blank">Nan Jiang*</a>,
+              <a href="https://zhiyuan-zhang0206.github.io/", target="_blank">Zhiyuan Zhang*</a>,
+              <a href="https://pku.ai/author/hongjie-li/", target="_blank">Hongjie Li</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://silvester.wang/", target="_blank">Zan Wang</a>,
+              <a href="https://yixchen.github.io/", target="_blank">Yixin Chen</a>,
+              <a href="https://tengyu.ai/", target="_blank">Tengyu Liu</a>,
+              <a href="https://yzhu.io/", target="_blank">Yixin Zhu</a>,
+              <a href="https://siyuanhuang.com/", target="_blank">Siyuan Huang</a>
+              <br>
+              <em>CVPR</em>, 2024
+              <br></p>
+              <div class="paper" id="TRUMANS">
+                <a href="javascript:toggleblock('TRUMANS_abs')">abstract</a> /
+                <a target="_blank">paper (coming soon)</a> /
+                <a target="_blank">code (coming soon)</a> /
+                <a href="https://jnnan.github.io/trumans/", target="_blank">project page</a> /
+                <a shape="rect" href="javascript:togglebib('TRUMANS')" class="togglebib">bibtex</a>
+                    
+                <p align="justify"> <i id="TRUMANS_abs">The advancing of human-scene interaction modeling confronts substantial challenges in the scarcity of high-quality data and advanced motion synthesis methods. Previous endeavors have been inadequate in offering sophisticated datasets that effectively tackle the dual challenges of scalability and data quality. In this work, we overcome these challenges by introducing <b>TRUMANS</b> (TRacking hUMan ActioNs in Scenes), a large-scale MoCap dataset created by efficiently and precisely replicating the synthetic scenes in the physical environment. TRUMANS, featuring the most extensive motion-captured human-scene interaction datasets thus far, comprises over 15 hours of diverse human behaviors, including concurrent interactions with dynamic and articulated objects, across 100 indoor scene configurations. It provides accurate pose sequences of both humans and objects, ensuring a high level of contact plausibility during the interaction. To further enhance adaptivity, we propose a data augmentation approach that automatically adapts collision-free and interaction-precise human motions. Leveraging the benefits of TRUMANS, we propose a novel approach that employs a diffusion-based autoregressive mechanism for the real-time generation of human-scene interaction sequences with arbitrary length. The efficacy of TRUMANS and our motion synthesis method is validated through extensive experimental results, surpassing all existing baselines in terms of quality and diversity. Notably, our method demonstrates superb zero-shot generalizability on existing 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), capable of generating even more realistic motions than the ground-truth annotations on PROX. Our human study further indicates that our generated motions are almost indistinguishable from the original motion-captured sequences, highlighting their superior quality. Our dataset and model will be released for research purposes.</i></p>
+                <pre xml:space="preserve">@inproceedings{jiang2024scaling,
+  title={Scaling Up Dynamic Human-Scene Interaction Modeling},
+  author={Jiang, Nan and Zhang, Zhiyuan and Li, Hongjie and Ma, Xiaoxuan and Wang, Zan and Chen, Yixin and Liu, Tengyu and Zhu, Yixin and Huang, Siyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}</pre>
+                <p>
+                  We introduce <b>TRUMANS</b>, a large-scale MoCap dataset, featuring the most extensive motion-captured human-scene interactions. We further propose a novel approach for the real-time generation of human-scene interaction sequences with arbitrary length.
                 </p>
               </div>
             </td>
@@ -161,7 +203,7 @@
     year={2023}
 }</pre>
                 <p>
-                  We provide a large-scale 3D multi-person motion dataset under the context of team sports, which features intense human interactions and diverse pose distributions.
+                  We provide a large-scale 3D multi-person motion dataset which features intense human interactions and diverse pose distributions. We reformulate the problem from a multi-agent reinforcement learning perspective to boost learning efficiency and generalization.
                 </p>
               </div>
             </td>
@@ -532,6 +574,9 @@ year = {2019}}</pre>
 hideallbibs();
 </script>
 
+<script xml:space="preserve" language="JavaScript">
+hideblock('TRUMANS_abs');
+</script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('ScoreHypo_abs');
 </script>

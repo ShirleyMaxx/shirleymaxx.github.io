@@ -40,3 +40,9 @@ function hideblock(blockId)
    var block = document.getElementById(blockId);
    block.style.display = 'none' ;
 }
+
+function showblock(blockId)
+{
+   var block = document.getElementById(blockId);
+   block.style.display = 'block' ;
+}

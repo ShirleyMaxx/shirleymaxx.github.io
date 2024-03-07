@@ -46,3 +46,16 @@ function showblock(blockId)
    var block = document.getElementById(blockId);
    block.style.display = 'block' ;
 }
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  var fixedBlock = document.querySelector('.fixed-block');
+  
+  if (scrollPosition > 200) {
+    fixedBlock.style.display = "block";
+  } else {
+    fixedBlock.style.display = "none";
+  }
+}

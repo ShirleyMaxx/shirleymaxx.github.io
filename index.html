@@ -116,11 +116,11 @@
                 <a shape="rect" href="javascript:togglebib('FreeCloth')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="FreeCloth_abs">Achieving realistic animated human avatars requires accurate modeling of pose-dependent clothing deformations. Existing learning-based methods heavily rely on the Linear Blend Skinning (LBS) of minimally-clothed human models like SMPL to model deformation. However, these methods struggle to handle challenging loose clothing, such as long dresses, because the required canonicalization process is ill-defined where clothing is away from the body, leading to disjointed and fragmented results. To overcome this limitation, we propose a novel hybrid framework to model challenging clothed humans. The core idea is to use two separate strategies to model clothing regions close to the body and distant from the body. Specifically, we leverage LBS to model close regions that are heavily affected by body movements. More importantly, we further introduce a novel free-form generation to model more distant clothing regions that are less affected by body movements. This free-form generation module, conditioned on the underlying body, endows enhanced flexibility and expressive capabilities when modeling challenging loose clothing, such as skirts and dresses. Combining the strengths of LBS-based deformation and free-form generation, our hybrid framework effectively captures the intricate geometric details of loose clothing. Experimental results on the benchmark dataset featuring loose clothing demonstrate that our method achieves superior visual fidelity and realism, particularly on the most challenging cases.</i></p>
-                <pre xml:space="preserve">@article{ye2024free,
+                <pre xml:space="preserve"><bibtex>@article{ye2024free,
     title={FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling},
     author={Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Zhu, Wentao and Wang, Yizhou},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We provide a novel perspective to tackle the Temporal Repetition Counting problem using a simple yet effective representation for action cycles, reducing the computational complexity from <i>quadratic</i> to <i>linear</i> with SOTA performance.
                 </p>
@@ -151,12 +151,12 @@
                 <a shape="rect" href="javascript:togglebib('DeTRC')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="DeTRC_abs">Temporal repetition counting aims to quantify the repeated action cycles within a video. The majority of existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we further develop two key components to tackle the fundamental challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic action query. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Second, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video feature representation corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging benchmark RepCountA, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction.</i></p>
-                <pre xml:space="preserve">@article{li2024efficient,
+                <pre xml:space="preserve"><bibtex>@article{li2024efficient,
     title={Efficient Action Counting with Dynamic Queries},
     author={Li, Zishi and Ma, Xiaoxuan and Shang, Qiuyan and Zhu, Wentao and Ci, Hai and Qiao, Yu and Wang, Yizhou},
     journal={arXiv preprint arXiv:2403.01543},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We provide a novel perspective to tackle the Temporal Repetition Counting problem using a simple yet effective representation for action cycles, reducing the computational complexity from <i>quadratic</i> to <i>linear</i> with SOTA performance.
                 </p>
@@ -187,12 +187,12 @@
                 <a shape="rect" href="javascript:togglebib('RobotPose')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="RobotPose_abs">Estimating robot pose from RGB images is a crucial problem in computer vision and robotics. While previous methods have achieved promising performance, most of them presume full knowledge of robot internal states, e.g. ground-truth robot joint angles, which are not always available in real-world scenarios. On the other hand, existing approaches that estimate robot pose without joint state priors suffer from heavy computation burdens and thus cannot support real-time applications. This work addresses the urgent need for efficient robot pose estimation with unknown states. We propose an end-to-end pipeline for real-time, holistic robot pose estimation from a single RGB image, even in the absence of known robot states. Our method decomposes the problem into estimating camera-to-robot rotation, robot state parameters, keypoint locations, and root depth. We further design a corresponding neural network module for each task. This approach allows for learning multi-facet representations and facilitates sim-to-real transfer through self-supervised learning. Notably, our method achieves inference with a single feedforward, eliminating the need for costly test-time iterative optimization. As a result, it delivers a 12 times speed boost with state-of-the-art accuracy, enabling real-time holistic robot pose estimation for the first time.</i></p>
-                <pre xml:space="preserve">@article{ban2024real,
+                <pre xml:space="preserve"><bibtex>@article{ban2024real,
     title={Real-time Holistic Robot Pose Estimation with Unknown States},
     author={Ban, Shikun and Fan, Juling and Zhu, Wentao and Ma, Xiaoxuan and Qiao, Yu and Wang, Yizhou},
     journal={arXiv preprint arXiv:2402.05655},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We propose an end-to-end pipeline for real-time, holistic robot pose estimation from a single RGB image, even in the absence of known robot states. Our method delivers a 12 times speed boost with SOTA accuracy, enabling real-time holistic robot pose estimation for the first time.
                 </p>
@@ -238,12 +238,12 @@
                 <a shape="rect" href="javascript:togglebib('ScoreHypo')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="ScoreHypo_abs">Monocular 3D human mesh estimation is an ill-posed problem, characterized by inherent ambiguity and occlusion. While recent probabilistic methods propose generating multiple solutions, little attention is paid to obtaining high-quality estimates from them. To address this limitation, we introduce <b>ScoreHypo</b>, a versatile framework by first leveraging our novel <b>HypoNet</b> to generate multiple hypotheses, followed by employing a meticulously designed scorer, <b>ScoreNet</b>, to evaluate and select high-quality estimates. ScoreHypo formulates the estimation process as a reverse denoising process, where HypoNet produces a diverse set of plausible estimates that effectively align with the image cues. Subsequently, ScoreNet is employed to rigorously evaluate and rank these estimates based on their quality and finally identify superior ones. Experimental results demonstrate that HypoNet outperforms existing state-of-the-art probabilistic methods as a multi-hypothesis mesh estimator. Moreover, the estimates selected by ScoreNet significantly outperform random generation or simple averaging. Notably, the trained ScoreNet exhibits generalizability, as it can effectively score existing methods and significantly reduce their errors by more than 15%.</i></p>
-                <pre xml:space="preserve">@inproceedings{xu2024probabilistic,
+                <pre xml:space="preserve"><bibtex>@inproceedings{xu2024probabilistic,
     title={ScoreHypo: Probabilistic Human Mesh Estimation with Hypothesis Scoring},
     author={Xu, Yuan and Ma, Xiaoxuan and Su, Jiajun and Zhu, Wentao and Qiao, Yu and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We introduce <i>ScoreHypo</i>, a versatile framework for probabilistic monocular 3D human mesh estimation by (i) generating multiple hypotheses with <i>HypoNet</i> and (ii) selecting high-quality ones with <i>ScoreNet</i>.
                 </p>
@@ -278,12 +278,12 @@
                 <a shape="rect" href="javascript:togglebib('TRUMANS')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="TRUMANS_abs">The advancing of human-scene interaction modeling confronts substantial challenges in the scarcity of high-quality data and advanced motion synthesis methods. Previous endeavors have been inadequate in offering sophisticated datasets that effectively tackle the dual challenges of scalability and data quality. In this work, we overcome these challenges by introducing <b>TRUMANS</b> (TRacking hUMan ActioNs in Scenes), a large-scale MoCap dataset created by efficiently and precisely replicating the synthetic scenes in the physical environment. TRUMANS, featuring the most extensive motion-captured human-scene interaction datasets thus far, comprises over 15 hours of diverse human behaviors, including concurrent interactions with dynamic and articulated objects, across 100 indoor scene configurations. It provides accurate pose sequences of both humans and objects, ensuring a high level of contact plausibility during the interaction. To further enhance adaptivity, we propose a data augmentation approach that automatically adapts collision-free and interaction-precise human motions. Leveraging the benefits of TRUMANS, we propose a novel approach that employs a diffusion-based autoregressive mechanism for the real-time generation of human-scene interaction sequences with arbitrary length. The efficacy of TRUMANS and our motion synthesis method is validated through extensive experimental results, surpassing all existing baselines in terms of quality and diversity. Notably, our method demonstrates superb zero-shot generalizability on existing 3D scene datasets (e.g., PROX, Replica, ScanNet, ScanNet++), capable of generating even more realistic motions than the ground-truth annotations on PROX. Our human study further indicates that our generated motions are almost indistinguishable from the original motion-captured sequences, highlighting their superior quality. Our dataset and model will be released for research purposes.</i></p>
-                <pre xml:space="preserve">@inproceedings{jiang2024scaling,
+                <pre xml:space="preserve"><bibtex>@inproceedings{jiang2024scaling,
     title={Scaling Up Dynamic Human-Scene Interaction Modeling},
     author={Jiang, Nan and Zhang, Zhiyuan and Li, Hongjie and Ma, Xiaoxuan and Wang, Zan and Chen, Yixin and Liu, Tengyu and Zhu, Yixin and Huang, Siyuan},
     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We introduce <i>TRUMANS</i>, a large-scale MoCap dataset, featuring the most extensive motion-captured human-scene interactions. We further propose a novel approach for the real-time generation of human-scene interaction sequences with arbitrary length.
                 </p>
@@ -326,13 +326,13 @@
                 <a shape="rect" href="javascript:togglebib('ChimpACT')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="ChimpACT_abs">Understanding the behavior of non-human primates is crucial for improving animal welfare, modeling social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of datasets on non-human primate behavior hinders in-depth exploration of primate social interactions, posing challenges to research on our closest living relatives. To address these limitations, we present <b>ChimpACT</b>, a comprehensive dataset for quantifying the longitudinal behavior and social relations of chimpanzees within a social group. Spanning from 2015 to 2018, <b>ChimpACT</b> features videos of a group of over 20 chimpanzees residing at the Leipzig Zoo, Germany, with a particular focus on documenting the developmental trajectory of one young male, Azibo. <b>ChimpACT</b> is both comprehensive and challenging, consisting of 163 videos with a cumulative 160,500 frames, each richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <b>ChimpACT</b>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Our experiments reveal that <b>ChimpACT</b> offers ample opportunities for both devising new methods and adapting existing ones to solve fundamental computer vision tasks applied to chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately deepening our comprehension of communication and sociality in non-human primates.</i></p>
-                <pre xml:space="preserve">@article{ma2024chimpact,
+                <pre xml:space="preserve"><bibtex>@article{ma2024chimpact,
     title={ChimpACT: A longitudinal dataset for understanding chimpanzee behaviors},
     author={Ma, Xiaoxuan and Kaufhold, Stephan and Su, Jiajun and Zhu, Wentao and Terwilliger, Jack and Meza, Andres and Zhu, Yixin and Rossano, Federico and Wang, Yizhou},
     journal={Advances in Neural Information Processing Systems},
     volume={36},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We propose <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior and social relations of chimpanzees within a social group, hoping to advance our understanding of communication and sociality in non-human primates.
                 </p>
@@ -366,13 +366,13 @@
                 <a shape="rect" href="javascript:togglebib('SocialMotion')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="SocialMotion_abs">Humans exhibit a remarkable capacity for anticipating the actions of others and planning their own actions accordingly. In this study, we strive to replicate this ability by addressing the social motion prediction problem. We introduce a new benchmark, a novel formulation, and a cognition-inspired framework. We present <b>Wusi</b>, a 3D multi-person motion dataset under the context of team sports, which features intense and strategic human interactions and diverse pose distributions. By reformulating the problem from a multi-agent reinforcement learning perspective, we incorporate behavioral cloning and generative adversarial imitation learning to boost learning efficiency and generalization. Furthermore, we take into account the cognitive aspects of the human social action planning process and develop a cognitive hierarchy framework to predict strategic human social interactions. We conduct comprehensive experiments to validate the effectiveness of our proposed dataset and approach.</i></p>
-                <pre xml:space="preserve">@article{zhu2024social,
+                <pre xml:space="preserve"><bibtex>@article{zhu2024social,
     title={Social Motion Prediction with Cognitive Hierarchies},
     author={Zhu, Wentao and Qin, Jason and Lou, Yuke and Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Wang, Yizhou},
     journal={Advances in Neural Information Processing Systems},
     volume={36},
     year={2024}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We provide a large-scale 3D multi-person motion dataset which features intense human interactions and diverse pose distributions. We reformulate the problem from a multi-agent reinforcement learning perspective to boost learning efficiency and generalization.
                 </p>
@@ -404,13 +404,13 @@
                 <a shape="rect" href="javascript:togglebib('MotionGenerationSurvey')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="MotionGenerationSurvey_abs">Human motion generation aims to generate natural human pose sequences and shows immense potential for real-world applications. Substantial progress has been made recently in motion data collection technologies and generation methods, laying the foundation for increasing interest in human motion generation. Most research within this field focuses on generating human motions based on conditional signals, such as text, audio, and scene contexts. While significant advancements have been made in recent years, the task continues to pose challenges due to the intricate nature of human motion and its implicit relationship with conditional signals. In this survey, we present a comprehensive literature review of human motion generation, which, to the best of our knowledge, is the first of its kind in this field. We begin by introducing the background of human motion and generative models, followed by an examination of representative methods for three mainstream sub-tasks: text-conditioned, audio-conditioned, and scene-conditioned human motion generation. Additionally, we provide an overview of common datasets and evaluation metrics. Lastly, we discuss open problems and outline potential future research directions. We hope that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.</i></p>
-                <pre xml:space="preserve">@article{zhu2023human,
+                <pre xml:space="preserve"><bibtex>@article{zhu2023human,
     title={Human motion generation: A survey},
     author={Zhu, Wentao and Ma, Xiaoxuan and Ro, Dongwoo and Ci, Hai and Zhang, Jinlu and Shi, Jiaxin and Gao, Feng and Tian, Qi and Wang, Yizhou},
     journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
     year={2023},
     publisher={IEEE}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We provide a survey on human motion generation, hoping that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.
                 </p>
@@ -442,13 +442,13 @@
                 <a shape="rect" href="javascript:togglebib('MotionBERT')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="MotionBERT_abs">We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources. Specifically, we propose a pretraining stage in which a motion encoder is trained to recover the underlying 3D motion from noisy partial 2D observations. The motion representations acquired in this way incorporate geometric, kinematic, and physical knowledge about human motion, which can be easily transferred to multiple downstream tasks. We implement the motion encoder with a Dual-stream Spatio-temporal Transformer (DSTformer) neural network. It could capture long-range spatio-temporal relationships among the skeletal joints comprehensively and adaptively, exemplified by the lowest 3D pose estimation error so far when trained from scratch. Furthermore, our proposed framework achieves state-of-the-art performance on all three downstream tasks by simply finetuning the pretrained motion encoder with a simple regression head (1-2 layers), which demonstrates the versatility of the learned motion representations.</i></p>
-                <pre xml:space="preserve">@inproceedings{zhu2023motionbert,
+                <pre xml:space="preserve"><bibtex>@inproceedings{zhu2023motionbert,
     title={Motionbert: A unified perspective on learning human motion representations},
     author={Zhu, Wentao and Ma, Xiaoxuan and Liu, Zhaoyang and Liu, Libin and Wu, Wayne and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
     pages={15085--15099},
     year={2023}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We present a unified perspective on tackling various human-centric video tasks by learning human motion representations from large-scale and heterogeneous data resources.
                 </p>
@@ -479,13 +479,13 @@
                 <a shape="rect" href="javascript:togglebib('VirtualMarker')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="VirtualMarker_abs">Inspired by the success of volumetric 3D pose estimation, some recent human mesh estimators propose to estimate 3D skeletons as intermediate representations, from which, the dense 3D meshes are regressed by exploiting the mesh topology. However, body shape information is lost in extracting skeletons, leading to mediocre performance. The advanced motion capture systems solve the problem by placing dense physical markers on the body surface, which allows to extract realistic meshes from their non-rigid motions. However, they cannot be applied to wild images without markers. In this work, we present an intermediate representation, named virtual markers, which learns 64 landmark keypoints on the body surface based on the large-scale mocap data in a generative style, mimicking the effects of physical markers. The virtual markers can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation. Our approach outperforms the state-of-the-art methods on three datasets. In particular, it surpasses the existing methods by a notable margin on the SURREAL dataset, which has diverse body shapes.</i></p>
-                <pre xml:space="preserve">@inproceedings{ma20233d,
+                <pre xml:space="preserve"><bibtex>@inproceedings{ma20233d,
     title={3D Human Mesh Estimation from Virtual Markers},
     author={Ma, Xiaoxuan and Su, Jiajun and Wang, Chunyu and Zhu, Wentao and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
     pages={534--543},
     year={2023}
-}</pre>
+}</bibtex></pre>
                 <p>
                 We introduce a novel representation named <i>virtual markers</i>, mimicking the effects of physical markers, which can be accurately detected from wild images and can reconstruct the intact meshes with realistic shapes by simple interpolation.
                 </p>
@@ -518,13 +518,13 @@
                 <a shape="rect" href="javascript:togglebib('GFPose')" class="togglebib">bibtex</a> 
 		      
                 <p align="justify"> <i id="GFPose_abs">Learning 3D human pose prior is essential to human-centered AI. Here, we present GFPose, a versatile framework to model plausible 3D human poses for various applications. At the core of GFPose is a time-dependent score network, which estimates the gradient on each body joint and progressively denoises the perturbed 3D human pose to match a given task specification. During the denoising process, GFPose implicitly incorporates pose priors in gradients and unifies various discriminative and generative tasks in an elegant framework. Despite the simplicity, GFPose demonstrates great potential in several downstream tasks. Our experiments empirically show that 1) as a multi-hypothesis pose estimator, GFPose outperforms existing SOTAs by 20% on Human3.6M dataset. 2) as a single-hypothesis pose estimator, GFPose achieves comparable results to deterministic SOTAs, even with a vanilla backbone. 3) GFPose is able to produce diverse and realistic samples in pose denoising, completion and generation tasks.</i></p>
-                <pre xml:space="preserve">@inproceedings{ci2023gfpose,
+                <pre xml:space="preserve"><bibtex>@inproceedings{ci2023gfpose,
     title={Gfpose: Learning 3d human pose prior with gradient fields},
     author={Ci, Hai and Wu, Mingdong and Zhu, Wentao and Ma, Xiaoxuan and Dong, Hao and Zhong, Fangwei and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
     pages={4800--4810},
     year={2023}
-}</pre>
+}</bibtex></pre>
                 <p>
                 We present GFPose, a versatile and elegant framework to model plausible 3D human poses for various applications, by implicitly incorporates pose priors in gradient fiedls.
                 </p>
@@ -559,7 +559,7 @@
                 <a shape="rect" href="javascript:togglebib('LCN_PAMI')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="LCN_PAMI_abs">We present an approach for 3D human pose estimation from monocular images. The approach consists of two steps: it first estimates a 2D pose from an image and then estimates the corresponding 3D pose. This paper focuses on the second step. Graph convolutional network (GCN) has recently become the de facto standard for human pose related tasks such as action recognition. However, in this work, we show that GCN has critical limitations when it is used for 3D pose estimation due to the inherent weight sharing scheme. The limitations are clearly exposed through a novel reformulation of GCN, in which both GCN and Fully Connected Network (FCN) are its special cases. In addition, on top of the formulation, we present locally connected network (LCN) to overcome the limitations of GCN by allocating dedicated rather than shared filters for different joints. We jointly train the LCN network with a 2D pose estimator such that it can handle inaccurate 2D poses. We evaluate our approach on two benchmark datasets and observe that LCN outperforms GCN, FCN, and the state-of-the-art methods by a large margin. More importantly, it demonstrates strong cross-dataset generalization ability because of sparse connections among body joints.</i></p>
-                <pre xml:space="preserve">@article{ci2020locally,
+                <pre xml:space="preserve"><bibtex>@article{ci2020locally,
     title={Locally connected network for monocular 3D human pose estimation},
     author={Ci, Hai and Ma, Xiaoxuan and Wang, Chunyu and Wang, Yizhou},
     journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
@@ -568,7 +568,7 @@
     pages={1429--1442},
     year={2020},
     publisher={IEEE}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We present an end-to-end approach by using Locally Connected Network (LCN) to estimate 3D human pose from a monocular image.
                 </p>
@@ -597,14 +597,14 @@
                 <a shape="rect" href="javascript:togglebib('VirtualPose')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="VirtualPose_abs">While monocular 3D pose estimation seems to have achieved very accurate results on the public datasets, their generalization ability is largely overlooked. In this work, we perform a systematic evaluation of the existing methods and find that they get notably larger errors when tested on different cameras, human poses and appearance. To address the problem, we introduce VirtualPose, a two-stage learning framework to exploit the hidden “free lunch” specific to this task, i.e.generating infinite number of poses and cameras for training models at no cost. To that end, the first stage transforms images to abstract geometry representations (AGR), and then the second maps them to 3D poses. It addresses the generalization issue from two aspects: (1) the first stage can be trained on diverse 2D datasets to reduce the risk of over-fitting to limited appearance; (2) the second stage can be trained on diverse AGR synthesized from a large number of virtual cameras and poses. It outperforms the SOTA methods without using any paired images and 3D poses from the benchmarks, which paves the way for practical applications.</i></p>
-                <pre xml:space="preserve">@inproceedings{su2022virtualpose,
+                <pre xml:space="preserve"><bibtex>@inproceedings{su2022virtualpose,
     title={Virtualpose: Learning generalizable 3d human pose models from virtual data},
     author={Su, Jiajun and Wang, Chunyu and Ma, Xiaoxuan and Zeng, Wenjun and Wang, Yizhou},
     booktitle={European Conference on Computer Vision},
     pages={55--71},
     year={2022},
     organization={Springer}
-}</pre>
+}</bibtex></pre>
                 <p>
                 We address the generalization issues in monocular 3D absolute pose estimation by introducing an intermediate representation termed Abstract Geometry Representation (AGR).
                 </p>
@@ -640,13 +640,13 @@
                 <a shape="rect" href="javascript:togglebib('ContextPose')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="ContextPose_abs">Estimating 3D human pose from a single image suffers from severe ambiguity since multiple 3D joint configurations may have the same 2D projection. The state-of-the-art methods often rely on context modeling methods such as pictorial structure model (PSM) or graph neural network (GNN) to reduce ambiguity. However, there is no study that rigorously compares them side by side. So we first present a general formula for context modeling in which both PSM and GNN are its special cases. By comparing the two methods, we found that the end-to-end training scheme in GNN and the limb length constraints in PSM are two complementary factors to improve results. To combine their advantages, we propose ContextPose based on attention mechanism that allows enforcing soft limb length constraints in a deep network. The approach effectively reduces the chance of getting absurd 3D pose estimates with incorrect limb lengths and achieves state-of-the-art results on two benchmark datasets. More importantly, the introduction of limb length constraints into deep networks enables the approach to achieve much better generalization performance.</i></p>
-                <pre xml:space="preserve">@inproceedings{ma2021context,
+                <pre xml:space="preserve"><bibtex>@inproceedings{ma2021context,
     title={Context modeling in 3d human pose estimation: A unified perspective},
     author={Ma, Xiaoxuan and Su, Jiajun and Wang, Chunyu and Ci, Hai and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
     pages={6238--6247},
     year={2021}
-}</pre>
+}</bibtex></pre>
                 <p>
                 We propose a general formula of context modeling in monocular 3D human pose estimation task.
                 </p>
@@ -682,13 +682,13 @@
                 <a shape="rect" href="javascript:togglebib('LCN')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="LCN_abs">A human pose is naturally represented as a graph where the joints are the nodes and the bones are the edges. So it is natural to apply Graph Convolutional Network (GCN) to estimate 3D poses from 2D poses. In this work, we propose a generic formulation where both GCN and Fully Connected Network (FCN) are its special cases. From this formulation, we discover that GCN has limited representation power when used for estimating 3D poses. We overcome the limitation by introducing Locally Connected Network (LCN) which is naturally implemented by this generic formulation. It notably improves the representation capability over GCN. In addition, since every joint is only connected to a few joints in its neighborhood, it has strong generalization power. The experiments on public datasets show it: (1) outperforms the state-of-the-arts; (2) is less data hungry than alternative models; (3) generalizes well to unseen actions and datasets.</i></p>
-                <pre xml:space="preserve">@inproceedings{ci2019optimizing,
+                <pre xml:space="preserve"><bibtex>@inproceedings{ci2019optimizing,
     title={Optimizing network structure for 3d human pose estimation},
     author={Ci, Hai and Wang, Chunyu and Ma, Xiaoxuan and Wang, Yizhou},
     booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
     pages={2262--2271},
     year={2019}
-}</pre>
+}</bibtex></pre>
                 <p>
                   We present Locally Connected Network (LCN) to overcome the limitations of GCN in 3D human pose estimation.
                 </p>
@@ -865,6 +865,27 @@ hideblock('LCN_PAMI_abs');
 <script xml:space="preserve" language="JavaScript">
 hideblock('LCN_abs');
 </script>
+
+
+<script>
+    const bibTex_list = document.querySelectorAll("bibtex");
+
+    bibTex_list.forEach((bibTex) => {
+        bibTex.onclick = function() {
+          document.execCommand("copy");
+      }
+
+      bibTex.addEventListener("copy", function(event) {
+      event.preventDefault();
+      if (event.clipboardData) {
+          event.clipboardData.setData("text/plain", bibTex.innerText);
+          alert("Citation copied to clipboard!");
+      }
+      });
+    });
+
+</script>
+
 
 </body>
 

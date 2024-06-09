@@ -15,12 +15,12 @@
     <meta property="og:image:height" content="840">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Efficient Action Counting with Dynamic Queries" />
-    <meta property="og:description" content="Temporal repetition counting aims to quantify the repeated action cycles within a video. The majority of existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we further develop two key components to tackle the fundamental challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic action query. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Second, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video feature representation corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging benchmark RepCountA, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction."
+    <meta property="og:description" content="Most existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we develop two key components to tackle the essential challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic update scheme on action queries. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Secondly, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video representations corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging RepCountA benchmark, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction. Code will be publicly available."
     />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Efficient Action Counting with Dynamic Queries" />
-    <meta name="twitter:description" content="Temporal repetition counting aims to quantify the repeated action cycles within a video. The majority of existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we further develop two key components to tackle the fundamental challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic action query. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Second, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video feature representation corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging benchmark RepCountA, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction."
+    <meta name="twitter:description" content="Most existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we develop two key components to tackle the essential challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic update scheme on action queries. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Secondly, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video representations corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging RepCountA benchmark, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction. Code will be publicly available."
     />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -51,10 +51,10 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        Zishi Li<sup>1</sup>
+                        Zishi Li<sup>1*</sup>
                     </li>
                     <li>
-                        <a href="https://shirleymaxx.github.io/", target="_blank">Xiaoxuan Ma</a><sup>1</sup>
+                        <a href="https://shirleymaxx.github.io/", target="_blank">Xiaoxuan Ma</a><sup>1*</sup>
                     </li>
                     <li>
                         Qiuyan Shang<sup>1</sup>
@@ -74,7 +74,7 @@
                 </ul>
                 <p><sup>1</sup>Peking University &nbsp;&nbsp;
                    <sup>2</sup>Shanghai Jiao Tong University <br>
-                    <!-- <sup>*</sup>Corresponding author -->
+                    <sup>*</sup>Equal contribution
                 </p>
             </div>
         </div>
@@ -91,7 +91,7 @@
                             <strong><font size="+1">[Code]</font></strong>
                     </a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="https://youtu.be/HHSCtMrkzKw" target="_blank">
+                    <a href="https://youtu.be/j98Zriek2xU" target="_blank">
                             <strong><font size="+1">[Video]</font></strong>
                     </a>
                 </ul>
@@ -119,7 +119,7 @@
                     <b>Abstract</b>
                 </h3>
                 <p class="text-justify ">
-                    Temporal repetition counting aims to quantify the repeated action cycles within a video. The majority of existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we further develop two key components to tackle the fundamental challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic action query. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Second, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video feature representation corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging benchmark RepCountA, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction.
+                    Most existing methods rely on the similarity correlation matrix to characterize the repetitiveness of actions, but their scalability is hindered due to the quadratic computational complexity. In this work, we introduce a novel approach that employs an action query representation to localize repeated action cycles with linear computational complexity. Based on this representation, we develop two key components to tackle the essential challenges of temporal repetition counting. Firstly, to facilitate open-set action counting, we propose the dynamic update scheme on action queries. Unlike static action queries, this approach dynamically embeds video features into action queries, offering a more flexible and generalizable representation. Secondly, to distinguish between actions of interest and background noise actions, we incorporate inter-query contrastive learning to regularize the video representations corresponding to different action queries. As a result, our method significantly outperforms previous works, particularly in terms of long video sequences, unseen actions, and actions at various speeds. On the challenging RepCountA benchmark, we outperform the state-of-the-art method TransRAC by 26.5% in OBO accuracy, with a 22.7% mean error decrease and 94.1% computational burden reduction. Code will be publicly available.
                 </p>
             </div>
         </div>
@@ -131,7 +131,7 @@
                 </h3>
                 <div class="text-center">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/HHSCtMrkzKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/j98Zriek2xU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>

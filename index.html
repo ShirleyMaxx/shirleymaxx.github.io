@@ -77,10 +77,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr><td>
             <h2>Research</h2>
-              My research interest lies at the intersection of computer vision and computer graphics, with a special focus on <b>Digital Humans</b>. Specifically, I am dedicated to developing innovative algorithms for the reconstruction, animation, and generation of realistic 3D human avatars. These efforts have broad applications in AI-Generated Content (AIGC), augmented and virtual reality (VR/AR), and, ultimately, the metaverse. My long-term research goal is to democratize the creation and utilization of digital content, facilitating more immersive and interactive experiences. 
-              <br>
-              <br>
-              I am also interested in applying advanced AI algorithms to support &#129421; wildlife scientific research and conservation efforts.
+              My research interest lies at the intersection of computer vision, computer graphics, and machine learning, with a special focus on &#129302; &#128131;&#127995; <b>Human Digitization</b>. Specifically, I am dedicated to developing innovative algorithms for the reconstruction, animation, and generation of realistic 3D human avatars. These efforts have broad applications in AI-Generated Content (AIGC), as well as augmented and virtual reality (VR/AR). I am also passionate about applying computer vision techniques to scientific research, <i>i.e.</i> <b>CV for science</b>, to uncover new insights and drive innovation across various scientific domains. In particular, I am studying AI-assisted wildlife understanding, especially for non-human primates &#129421;, while promoting animal welfare. My ultimate research goal is to construct a <i>digital twin</i> of our dynamic 3D world, where humans, animals, and their environments are digitized, modeled, and brought to life in a virtual realm.
               <br>
               <br>
               Fortunately, I have the privilege to collaborate with Principal Researcher Dr. <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a> from MSRA on the human digitalization work and spent wonderful time at <a href="https://www.microsoft.com/en-us/research/group/internet-media/", target="_blank">MSRA IM Group</a>.
@@ -107,6 +104,73 @@
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           
+          <tr>
+            <td width="33%" valign="top"><a href="images/vmarker_pro.gif"><img src="images/vmarker_pro.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/abs/2303.11726v3", target="_blank" id="">
+              <heading>VMarker-Pro: Probabilistic 3D Human Mesh Estimation from Virtual Markers</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank">Jiajun Su</a>,
+              <a href="https://xy02-05.github.io/", target="_blank">Yuan Xu</a>,
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <a href="https://www.chunyuwang.org/", target="_blank">Chunyu Wang</a>, 
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>arXiv</em>, 2024
+              <br></p>
+              <div class="paper" id="VMPro">
+                <a onmouseover="showblock('VMPro_abs')" onmouseout="hideblock('VMPro_abs')">abstract</a> /
+                <a href="https://arxiv.org/abs/2303.11726v3.pdf" target="_blank">arxiv</a> /
+                <a href="https://github.com/ShirleyMaxx/VMarker-Pro", target="_blank">code</a> /
+                <a shape="rect" href="javascript:togglebib('VMPro')" class="togglebib">bibtex</a>
+                    
+                <p align="justify"> <i id="VMPro_abs">Monocular 3D human mesh estimation faces challenges due to depth ambiguity and the complexity of mapping images to complex parameter spaces. Recent methods propose to use 3D poses as a proxy representation, which often lose crucial body shape information, leading to mediocre performance. Conversely, advanced motion capture systems, though accurate, are impractical for markerless wild images. Addressing these limitations, we introduce an innovative intermediate representation as <i>virtual markers</i>, which are learned from large-scale mocap data, mimicking the effects of physical markers. Building upon virtual markers, we propose VirtualMarker, which detects virtual markers from wild images, and the intact mesh with realistic shapes can be obtained by simply interpolation from these markers. To address occlusions that obscure 3D virtual marker estimation, we further enhance our method with VMarker-Pro, a probabilistic framework that generates multiple plausible meshes aligned with images. This framework models the 3D virtual marker estimation as a conditional denoising process, enabling robust 3D mesh estimation. Our approaches surpass existing methods on three benchmark datasets, particularly demonstrating significant improvements on the SURREAL dataset, which features diverse body shapes. Additionally, VMarker-Pro excels in accurately modeling data distributions, significantly enhancing performance in occluded scenarios.</i></p>
+                <pre xml:space="preserve"><bibtex>@article{ma2024vmarkerpro,
+    title={VMarker-Pro: Probabilistic 3D Human Mesh Estimation from Virtual Markers},
+    author={Ma, Xiaoxuan and Su, Jiajun and Xu, Yuan and Zhu, Wentao and Wang, Chunyu and Wang, Yizhou},
+    journal={arXiv preprint arXiv:2303.11726v3},
+    year={2024}
+}</bibtex></pre>
+                <p>
+                  We introduce a novel perspective on tackling the ambiguity issue by modeling the 3D mesh estimation process as a conditional generation process that could generate multiple reasonable estimates.
+                </p>
+              </div>
+            </td>
+          </tr> 
+
+          <tr>
+            <td width="33%" valign="top"><a href="images/free_cloth.gif"><img src="images/free_cloth.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="", target="_blank" id="">
+              <heading>FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <a href="https://alvinyh.github.io/" target="_blank">Hang Ye</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://haici.cc/", target="_blank">Hai Ci</a>,
+              <a href="https://wentao.live/", target="_blank">Wentao Zhu</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>Under review</em>, 2024
+              <br></p>
+              <div class="paper" id="FreeCloth">
+                <a onmouseover="showblock('FreeCloth_abs')" onmouseout="hideblock('FreeCloth_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('FreeCloth')" class="togglebib">bibtex</a>
+                    
+                <p align="justify"> <i id="FreeCloth_abs">Animating 3D clothed humans requires the modeling of pose-dependent deformations in various poses. The diversity of clothing styles and body poses makes this task extremely challenging.  Prior works rely on LBS skinning and predict local transformation in the canonical space. Nevertheless, it's quite challenging to model loose clothing, such as skirt and long dress, since they deviate significantly from the human body. Incorrect estimation of rigid transformations makes it difficult for the model to regress the residuals, which inevitably degrades the performance. In this work, we revisit the task of clothed humans modeling from a novel perspective. Our key insight is that canonicalization isn't a necessary step to predict clothing deformation, which circumvents the drawbacks of LBS posing in essence. Instead, we propose to learn features in the posed space. Without bell and whistle, our proposed model achieves state-of-the-arts performance on the CAPE and the ReSynth dataset. This simple yet effective paradigm provides a new possiblity of modeling pose-dependent deformation. Our model is capable of generating realistic 3D clothed humans with better perceptual quality.</i></p>
+                <pre xml:space="preserve"><bibtex>@article{li2024efficient,
+    title={FreeCloth: Free-form Generation Enhances Challenging Clothed Human Modeling},
+    author={Ye, Hang and Ma, Xiaoxuan and Ci, Hai and Zhu, Wentao and Wang, Yizhou},
+    journal={arXiv preprint},
+    year={2024}
+}</bibtex></pre>
+                <p>
+                  We provide a hybrid framework to model challenging clothed humans which is capable of generating realistic 3D clothed humans with better perceptual quality.
+                </p>
+              </div>
+            </td>
+          </tr> 
+
           <tr>
             <td width="33%" valign="top"><a href="images/detrc.gif"><img src="images/detrc.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -312,12 +376,13 @@
                 <a shape="rect" href="javascript:togglebib('ChimpACT')" class="togglebib">bibtex</a>
                     
                 <p align="justify"> <i id="ChimpACT_abs">Understanding the behavior of non-human primates is crucial for improving animal welfare, modeling social behavior, and gaining insights into distinctively human and phylogenetically shared behaviors. However, the lack of datasets on non-human primate behavior hinders in-depth exploration of primate social interactions, posing challenges to research on our closest living relatives. To address these limitations, we present <b>ChimpACT</b>, a comprehensive dataset for quantifying the longitudinal behavior and social relations of chimpanzees within a social group. Spanning from 2015 to 2018, <b>ChimpACT</b> features videos of a group of over 20 chimpanzees residing at the Leipzig Zoo, Germany, with a particular focus on documenting the developmental trajectory of one young male, Azibo. <b>ChimpACT</b> is both comprehensive and challenging, consisting of 163 videos with a cumulative 160,500 frames, each richly annotated with detection, identification, pose estimation, and fine-grained spatiotemporal behavior labels. We benchmark representative methods of three tracks on <b>ChimpACT</b>: (i) tracking and identification, (ii) pose estimation, and (iii) spatiotemporal action detection of the chimpanzees. Our experiments reveal that <b>ChimpACT</b> offers ample opportunities for both devising new methods and adapting existing ones to solve fundamental computer vision tasks applied to chimpanzee groups, such as detection, pose estimation, and behavior analysis, ultimately deepening our comprehension of communication and sociality in non-human primates.</i></p>
-                <pre xml:space="preserve"><bibtex>@article{ma2024chimpact,
-    title={ChimpACT: A longitudinal dataset for understanding chimpanzee behaviors},
-    author={Ma, Xiaoxuan and Kaufhold, Stephan and Su, Jiajun and Zhu, Wentao and Terwilliger, Jack and Meza, Andres and Zhu, Yixin and Rossano, Federico and Wang, Yizhou},
-    journal={Advances in Neural Information Processing Systems},
-    volume={36},
-    year={2024}
+                <pre xml:space="preserve"><bibtex>@article{ma2023chimpact,
+  title={Chimpact: A longitudinal dataset for understanding chimpanzee behaviors},
+  author={Ma, Xiaoxuan and Kaufhold, Stephan and Su, Jiajun and Zhu, Wentao and Terwilliger, Jack and Meza, Andres and Zhu, Yixin and Rossano, Federico and Wang, Yizhou},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  pages={27501--27531},
+  year={2023}
 }</bibtex></pre>
                 <p>
                   We propose <span>ChimpACT</span>, a comprehensive dataset for deciphering the longitudinal behavior and social relations of chimpanzees within a social group, hoping to advance our understanding of communication and sociality in non-human primates.
@@ -390,12 +455,14 @@
                 <a shape="rect" href="javascript:togglebib('MotionGenerationSurvey')" class="togglebib">bibtex</a>
 		      
                 <p align="justify"> <i id="MotionGenerationSurvey_abs">Human motion generation aims to generate natural human pose sequences and shows immense potential for real-world applications. Substantial progress has been made recently in motion data collection technologies and generation methods, laying the foundation for increasing interest in human motion generation. Most research within this field focuses on generating human motions based on conditional signals, such as text, audio, and scene contexts. While significant advancements have been made in recent years, the task continues to pose challenges due to the intricate nature of human motion and its implicit relationship with conditional signals. In this survey, we present a comprehensive literature review of human motion generation, which, to the best of our knowledge, is the first of its kind in this field. We begin by introducing the background of human motion and generative models, followed by an examination of representative methods for three mainstream sub-tasks: text-conditioned, audio-conditioned, and scene-conditioned human motion generation. Additionally, we provide an overview of common datasets and evaluation metrics. Lastly, we discuss open problems and outline potential future research directions. We hope that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.</i></p>
-                <pre xml:space="preserve"><bibtex>@article{zhu2023human,
-    title={Human motion generation: A survey},
-    author={Zhu, Wentao and Ma, Xiaoxuan and Ro, Dongwoo and Ci, Hai and Zhang, Jinlu and Shi, Jiaxin and Gao, Feng and Tian, Qi and Wang, Yizhou},
-    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-    year={2023},
-    publisher={IEEE}
+                <pre xml:space="preserve"><bibtex>@article{zhu2024human,
+  author={Zhu, Wentao and Ma, Xiaoxuan and Ro, Dongwoo and Ci, Hai and Zhang, Jinlu and Shi, Jiaxin and Gao, Feng and Tian, Qi and Wang, Yizhou},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Human Motion Generation: A Survey}, 
+  year={2024},
+  volume={46},
+  number={4},
+  pages={2430-2449}
 }</bibtex></pre>
                 <p>
                   We provide a survey on human motion generation, hoping that this survey could provide the community with a comprehensive glimpse of this rapidly evolving field and inspire novel ideas that address the outstanding challenges.
@@ -422,7 +489,7 @@
               <div class="paper" id="MotionBERT">
                 <a onmouseover="showblock('MotionBERT_abs')" onmouseout="hideblock('MotionBERT_abs')">abstract</a> /
                 <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Zhu_MotionBERT_A_Unified_Perspective_on_Learning_Human_Motion_Representations_ICCV_2023_paper.pdf", target="_blank">paper</a> /
-                <a href="https://arxiv.org/abs/2210.06551.pdf", target="_blank">arixv</a> /
+                <a href="https://arxiv.org/abs/2210.06551.pdf", target="_blank">arxiv</a> /
                 <a href="https://github.com/Walter0807/MotionBERT/", target="_blank">code</a> /
                 <a href="https://motionbert.github.io/", target="_blank">project page</a> /
                 <a shape="rect" href="javascript:togglebib('MotionBERT')" class="togglebib">bibtex</a>
@@ -721,8 +788,10 @@
             <h2>Co-mentoring</h2>
             <p>I am fortunate to have the opportunity to work with a few talented and highly motivated junior students (ordered by year and last name):</p>
             <p style="margin-left: 3%;">&middot; <a href="https://alvinyh.github.io/", target="_blank">Hang Ye</a> (2022-Now)</p>
-              <p style="margin-left: 7%;">now first-year Ph.D. at PKU, advised by Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a></p>
+              <p style="margin-left: 7%;">now second-year Ph.D. at PKU, advised by Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a></p>
             <p style="margin-left: 3%;">&middot; <a href="https://xy02-05.github.io/", target="_blank">Yuan Xu</a> (2022-Now)</p>
+              <p style="margin-left: 7%;">now first-year Ph.D. at PKU, advised by Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a></p>
+            <p style="margin-left: 3%;">&middot; Chi Su</a> (2023-Now)</p>
               <p style="margin-left: 7%;">senior undergraduate, incoming Ph.D. at PKU, advised by Prof. <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank">Yizhou Wang</a></p>
             <p style="margin-left: 3%;">&middot; Shikun Ban (2022-Now)</p>
               <p style="margin-left: 7%;">undergraduate at PKU</p>
@@ -795,7 +864,7 @@
           <div class="container">
               <div class="row">
                   <div class="copyright" >
-                    Template courtesy of <a href="https://jonbarron.info/", target="_blank">Jon Barron</a>. Last update: 7/2024.
+                    Template courtesy of <a href="https://jonbarron.info/", target="_blank">Jon Barron</a>. Last update: 8/2024.
                   </div>
                   <div class="stat">
                   </div>
@@ -810,6 +879,9 @@
 hideallbibs();
 </script>
 
+<script xml:space="preserve" language="JavaScript">
+hideblock('VMPro_abs');
+</script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('FreeCloth_abs');
 </script>

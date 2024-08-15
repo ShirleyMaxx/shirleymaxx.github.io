@@ -81,22 +81,28 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
 }
+
+#footer a {
+  font-size: inherit; /* Inherits the font size of the parent element (like p or div) */
+  font-family: inherit; /* Inherits the font family from the parent element */
+}
+
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 16px
 }
 
 strongred {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   color: 'red';
-  font-size: 14px
+  font-size: 16px
 }
 
 pre {
-  font-size: 6px;
+  font-size: 8px;
   white-space:pre-wrap;
   white-space:-moz-pre-wrap;
   white-space:-pre-wrap;
@@ -106,13 +112,13 @@ pre {
 
 heading {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700
 }
 
 name {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .one {

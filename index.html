@@ -98,7 +98,7 @@
 
             <h3>Selected projects</h3>
               <p style="margin-left: 3%;">Reconstruction, animation, and generation of realistic 3D human avatars: <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ma_Context_Modeling_in_3D_Human_Pose_Estimation_A_Unified_Perspective_CVPR_2021_paper.pdf", target="_blank">ContextPose</a>, <a href="https://shirleymaxx.github.io/virtual_marker", target="_blank">VirtualMarker</a>, <a href="https://github.com/ShirleyMaxx/VMarker-Pro", target="_blank">VMarker-Pro</a>, <a href="https://xy02-05.github.io/ScoreHypo", target="_blank">ScoreHypo</a> </p>
-              <p style="margin-left: 3%;">CV for science, AI-assisted wildlife understanding: &nbsp; <img src="ChimpACT/images/icon.png" alt="Emoji Chimp" class="emoji-chimp" height="15px">&nbsp; <a href="https://shirleymaxx.github.io/ChimpACT/", target="_blank">ChimpACT</a></p>
+              <p style="margin-left: 3%;">CV for science, AI-assisted wildlife understanding: &nbsp; <img src="ChimpACT/images/icon.png" alt="Emoji Chimp" class="emoji-chimp" height="15px">&nbsp; <a href="https://shirleymaxx.github.io/ChimpACT/", target="_blank">ChimpACT</a>, <a href="https://sites.google.com/view/alphachimp/home", target="_blank">AlphaChimp</a></p>
           </td></tr>
         </table>
 
@@ -116,7 +116,47 @@
           </td></tr>
         </table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
-          
+
+          <tr>
+            <td width="33%" valign="top"><a href="images/alphachimp.gif"><img src="images/alphachimp.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://sites.google.com/view/alphachimp/home", target="_blank" id="">
+              <heading>AlphaChimp: Tracking and Behavior Recognition of Chimpanzees</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <strong>Xiaoxuan Ma*</strong>,
+              <a href="https://tongclass.ac.cn/author/yutang-lin/", target="_blank">Yutang Lin*</a>,
+              <a href="https://xy02-05.github.io/", target="_blank">Yuan Xu</a>,
+              <a href="https://carta.anthropogeny.org/users/stephan-kaufhold", target="_blank">Stephan P. Kaufhold*</a>,
+              <a href="http://jackterwilliger.com/", target="_blank">Jack Terwilliger</a>,
+              <a href="https://www.linkedin.com/in/andy-meza-9bb064213/", target="_blank">Andres Meza</a>,
+              <a href="https://yzhu.io/", target="_blank">Yixin Zhu</a>,
+              <a href="https://cogsci.ucsd.edu/people/faculty/federico-rossano.html", target="_blank">Federico Rossano</a>,
+              <a href="https://idm.pku.edu.cn/info/1017/1037.htm", target="_blank">Yizhou Wang</a>
+              <br>
+              <em>Under review</em>, 2024
+              <br></p>
+              <div class="paper" id="AlphaChimp">
+                <a onmouseover="showblock('AlphaChimp_abs')" onmouseout="hideblock('AlphaChimp_abs')">abstract</a> /
+                <a href="" target="_blank">arxiv (coming soon) </a> /
+                <a href="https://github.com/ShirleyMaxx/AlphaChimp", target="_blank">code</a> /
+                <a href="https://sites.google.com/view/alphachimp/home", target="_blank">project page</a> /
+                <a shape="rect" href="javascript:togglebib('AlphaChimp')" class="togglebib">bibtex</a>
+                    
+                <p align="justify"> <i id="AlphaChimp_abs">Understanding non-human primate behavior is crucial for improving animal welfare, modeling social behavior, and gaining insights into both distinctly human and shared behaviors. Despite recent advances in computer vision, automated analysis of primate behavior remains challenging due to the complexity of their social interactions and the lack of specialized algorithms. Existing methods often struggle with the nuanced behaviors and frequent occlusions characteristic of primate social dynamics. This study aims to develop an effective method for automated detection, tracking, and recognition of chimpanzee behaviors in video footage. Here we show that our proposed method, <b>AlphaChimp</b>, an end-to-end approach that simultaneously detects chimpanzee positions and estimates behavior categories from videos, significantly outperforms existing methods in behavior recognition. AlphaChimp achieves approximately 10% higher tracking accuracy and a 20% improvement in behavior recognition compared to state-of-the-art methods, particularly excelling in the recognition of social behaviors. This superior performance stems from AlphaChimp's innovative architecture, which integrates temporal feature fusion with a Transformer-based self-attention mechanism, enabling more effective capture and interpretation of complex social interactions among chimpanzees. Our approach bridges the gap between computer vision and primatology, enhancing technical capabilities and deepening our understanding of primate communication and sociality. We release our code and models and hope this will facilitate future research in animal social dynamics. This work contributes to ethology, cognitive science, and artificial intelligence, offering new perspectives on social intelligence.</i></p>
+                <pre xml:space="preserve"><bibtex>@article{ma2024alphachimp,
+    title={AlphaChimp: Tracking and Behavior Recognition of Chimpanzees},
+    author={Ma, Xiaoxuan and Lin, Yutang and Xu, Yuan and Kaufhold, Stephan and Terwilliger, Jack and Meza, Andres and Zhu, Yixin and Rossano, Federico and Wang, Yizhou},
+    journal={arXiv preprint arXiv},
+    year={2024}
+}</bibtex></pre>
+                <p>
+                  We propose AlphaChimp, an end-to-end approach that simultaneously detects chimpanzee positions and estimates behavior categories from videos.
+                </p>
+              </div>
+            </td>
+          </tr> 
+
+
           <tr>
             <td width="33%" valign="top"><a href="images/vmarker_pro.gif"><img src="images/vmarker_pro.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -892,6 +932,9 @@
 hideallbibs();
 </script>
 
+<script xml:space="preserve" language="JavaScript">
+hideblock('AlphaChimp_abs');
+</script>
 <script xml:space="preserve" language="JavaScript">
 hideblock('VMPro_abs');
 </script>

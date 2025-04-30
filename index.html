@@ -125,37 +125,6 @@
         <!-- Preprints -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" cellspacing="0" cellpadding="20">
           <h2 style="margin-left: 2%;">Preprints</h2>
-          <tr>
-            <td width="23%" valign="top"><a href="images/sathmr.gif"><img src="images/sathmr.gif" width="90%" style="border-style: none; display: block; margin: 0 auto;"></a>
-            <td width="72%" valign="top">
-              <p style="margin: 0;"><a href="https://chisu001.github.io/SAT-HMR/", target="_blank" id="" class="anocolor">
-              <heading>SAT-HMR: Real-Time Multi-Person 3D Mesh Estimation via Scale-Adaptive Tokens</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
-              <br>
-              <a href="https://github.com/ChiSu001/", target="_blank" class="anocolor">Chi Su</a>,
-              <strong>Xiaoxuan Ma</strong>,
-              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank" class="anocolor">Jiajun Su</a>,
-              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank" class="anocolor">Yizhou Wang</a>
-              <br>
-              <em>arXiv</em>, 2024  &nbsp;   &nbsp;  <a class="github-badge" href="https://github.com/ChiSu001/SAT-HMR/" target="_blank"></a> <img src="https://img.shields.io/github/stars/ChiSu001/SAT-HMR?style=social&color=%231a6bea" alt="GitHub stars"></a>
-              <br></p>
-              <div class="paper" id="SATHMR">
-                <a onmouseover="showblock('SATHMR_abs')" onmouseout="hideblock('SATHMR_abs')" style="font-weight: normal;">Abstract</a> |
-                <a href="http://arxiv.org/abs/2411.19824" target="_blank" style="font-weight: normal;">Arxiv</a> |
-                <a href="https://github.com/ChiSu001/SAT-HMR", target="_blank" style="font-weight: normal;">Code</a> |
-                <a href="https://chisu001.github.io/SAT-HMR/", target="_blank" style="font-weight: normal;">Project page</a> |
-                <a href="https://www.youtube.com/watch?v=tqURcr_nCQY", target="_blank" style="font-weight: normal;">Video</a> |
-                <a shape="rect" href="javascript:togglebib('SATHMR')" class="togglebib" style="font-weight: normal;">Bibtex</a>
-                    
-                <p align="justify"> <i id="SATHMR_abs">We propose a one-stage framework for real-time multi-person 3D human mesh estimation from a single RGB image. While current one-stage methods, which follow a DETR-style pipeline, achieve state-of-the-art (SOTA) performance with high-resolution inputs, we observe that this particularly benefits the estimation of individuals in smaller scales of the image (e.g., those far from the camera), but at the cost of significantly increased computation overhead. To address this, we introduce scale-adaptive tokens that are dynamically adjusted based on the relative scale of each individual in the image within the DETR framework. Specifically, individuals in smaller scales are processed at higher resolutions, larger ones at lower resolutions, and background regions are further distilled. These scale-adaptive tokens more efficiently encode the image features, facilitating subsequent decoding to regress the human mesh, while allowing the model to allocate computational resources more effectively and focus on more challenging cases. Experiments show that our method preserves the accuracy benefits of high-resolution processing while substantially reducing computational cost, achieving real-time inference with performance comparable to SOTA methods.</i></p>
-                <pre xml:space="preserve"><bibtex>@article{su2024sathmr,
-      title={SAT-HMR: Real-Time Multi-Person 3D Mesh Estimation via Scale-Adaptive Tokens},
-      author={Su, Chi and Ma, Xiaoxuan and Su, Jiajun and Wang, Yizhou},
-      journal={arXiv preprint arXiv:2411.19824},
-      year={2024}
-    }</bibtex></pre>
-              </div>
-            </td>
-          </tr>
           
           <tr>
             <td width="23%" valign="top"><a href="images/alphachimp.gif"><img src="images/alphachimp.gif" width="90%" style="border-style: none; display: block; margin: 0 auto;"></a>
@@ -264,6 +233,39 @@
               </div>
             </td>
           </tr> 
+
+          <tr>
+            <td width="23%" valign="top"><a href="images/sathmr.gif"><img src="images/sathmr.gif" width="90%" style="border-style: none; display: block; margin: 0 auto;"></a>
+            <td width="72%" valign="top">
+              <p style="margin: 0;"><a href="https://chisu001.github.io/SAT-HMR/", target="_blank" id="" class="anocolor">
+              <heading>SAT-HMR: Real-Time Multi-Person 3D Mesh Estimation via Scale-Adaptive Tokens</b></heading></a>&nbsp; <img src="images/new.gif" alt="fast-texture" width="25" height="11">
+              <br>
+              <a href="https://github.com/ChiSu001/", target="_blank" class="anocolor">Chi Su</a>,
+              <strong>Xiaoxuan Ma</strong>,
+              <a href="https://scholar.google.com/citations?user=DoUvUz4AAAAJ&hl=zh-CN", target="_blank" class="anocolor">Jiajun Su</a>,
+              <a href="https://cfcs.pku.edu.cn/english/people/faculty/yizhouwang/index.htm", target="_blank" class="anocolor">Yizhou Wang</a>
+              <br>
+              <em>CVPR</em>, 2025  &nbsp;   &nbsp;  <a class="github-badge" href="https://github.com/ChiSu001/SAT-HMR/" target="_blank"></a> <img src="https://img.shields.io/github/stars/ChiSu001/SAT-HMR?style=social&color=%231a6bea" alt="GitHub stars"></a>
+              <br></p>
+              <div class="paper" id="SATHMR">
+                <a onmouseover="showblock('SATHMR_abs')" onmouseout="hideblock('SATHMR_abs')" style="font-weight: normal;">Abstract</a> |
+                <a href="http://arxiv.org/abs/2411.19824" target="_blank" style="font-weight: normal;">Arxiv</a> |
+                <a href="https://github.com/ChiSu001/SAT-HMR", target="_blank" style="font-weight: normal;">Code</a> |
+                <a href="https://chisu001.github.io/SAT-HMR/", target="_blank" style="font-weight: normal;">Project page</a> |
+                <a href="https://www.youtube.com/watch?v=tqURcr_nCQY", target="_blank" style="font-weight: normal;">Video</a> |
+                <a shape="rect" href="javascript:togglebib('SATHMR')" class="togglebib" style="font-weight: normal;">Bibtex</a>
+                    
+                <p align="justify"> <i id="SATHMR_abs">We propose a one-stage framework for real-time multi-person 3D human mesh estimation from a single RGB image. While current one-stage methods, which follow a DETR-style pipeline, achieve state-of-the-art (SOTA) performance with high-resolution inputs, we observe that this particularly benefits the estimation of individuals in smaller scales of the image (e.g., those far from the camera), but at the cost of significantly increased computation overhead. To address this, we introduce scale-adaptive tokens that are dynamically adjusted based on the relative scale of each individual in the image within the DETR framework. Specifically, individuals in smaller scales are processed at higher resolutions, larger ones at lower resolutions, and background regions are further distilled. These scale-adaptive tokens more efficiently encode the image features, facilitating subsequent decoding to regress the human mesh, while allowing the model to allocate computational resources more effectively and focus on more challenging cases. Experiments show that our method preserves the accuracy benefits of high-resolution processing while substantially reducing computational cost, achieving real-time inference with performance comparable to SOTA methods.</i></p>
+                <pre xml:space="preserve"><bibtex>@article{su2024sathmr,
+      title={SAT-HMR: Real-Time Multi-Person 3D Mesh Estimation via Scale-Adaptive Tokens},
+      author={Su, Chi and Ma, Xiaoxuan and Su, Jiajun and Wang, Yizhou},
+      journal={arXiv preprint arXiv:2411.19824},
+      year={2024}
+    }</bibtex></pre>
+              </div>
+            </td>
+          </tr>
+
 
           <tr>
             <td width="23%" valign="top"><a href="images/vmarker_pro.gif"><img src="images/vmarker_pro.gif" width="90%" style="border-style: none; display: block; margin: 0 auto;"></a>
